@@ -1,0 +1,62 @@
+body {
+  margin: auto;
+  max-width: 700px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+header {
+  /* grid style */
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+
+  /* other styles */
+  color: white;
+  background-color: rgb(33 60 195);
+  font-size: 0.95rem;
+  padding-bottom: 1em;
+}
+
+header h1 {
+  height: 1.3rem;
+  font-family: 'Work Sans', sans-serif;
+}
+
+header img {
+  width: 25%;
+  z-index: 1;
+}
+
+footer {
+  color: white;
+  font-size: 0.8rem;
+  background-color: rgb(33 60 195);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+footer a:visited {
+  color: #b883ff;
+}
+footer a {
+  color: lightblue;
+}
+
+/*
+hr {
+  margin-right: 42px;
+  margin-top: -20px;
+}
+*/
+hr {
+  border: 0;
+  height: 0.01rem;
+  background: #000;
+  width: 97%;
+  grid-column: 3 / 1;
+}
+
+ul {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

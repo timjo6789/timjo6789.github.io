@@ -1,0 +1,15 @@
+footer {
+  color: white;
+  font-size: 0.8rem;
+  background-color: rgb(33 60 195);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+footer a:visited {
+  color: #b883ff;
+}
+footer a {
+  color: lightblue;
+}

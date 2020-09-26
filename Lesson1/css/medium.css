@@ -1,0 +1,41 @@
+/* W02 Media Queries for medium.css */
+
+@media (min-width: 32.5em) {
+  header {
+    grid-template-columns: 50% 50%;
+    height: 50px;
+    border-width: 0px;
+    border-radius: 7px;
+  }
+
+  header img {
+    width: auto;
+    margin-top: 15px;
+    justify-self: end;
+    margin-right: 10px;
+    box-shadow: 5px 6px 4px -2px #4e4e4ef2;
+  }
+  header h1 {
+    margin: 18px -43px 0px 20px;
+  }
+  h2 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 61%;
+  }
+  main div {
+    justify-self: center;
+    margin-right: 37px;
+  }
+
+  footer {
+    border-width: 0px;
+    border-radius: 7px;
+    margin-top: 66px;
+    padding-right: 64px;
+  }
+}
