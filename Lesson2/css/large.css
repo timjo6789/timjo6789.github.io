@@ -1,10 +1,11 @@
-@media only screen and (min-width: 45em) {
+@media only screen and (min-width: 67.5em) {
   body{
     max-width: 75%;
   }
 
   main {
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.5rem;
   }
 
 }

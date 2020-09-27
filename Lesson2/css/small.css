@@ -20,42 +20,51 @@ main {
 section h2 {
   background-color: rgb(33 60 195);
   color: white;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   margin-top: 0px;
+  font-size: 2.25rem;
   text-align: center;
   font-family: 'Work Sans', sans-serif;
 }
 
 section {
-  margin-top: 25px;
+  margin-top: 38px;
   color: black;
   background-color: #d6d6d6;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
 }
-section h1, section p, section a {
-  padding-left: 5px;
+section p, section a {
+  padding-left: 7.5px;
+}
+
+section p {
+  font-size: 1.5rem;
+}
+
+section a {
+  font-size: 1.5rem;
 }
 section img {
   margin: 0 auto;
   width: 94%;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 header {
   color: white;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   background-color: rgb(33 60 195);
-  margin-top: -17px;
+  margin-top: -26px;
   text-align: center;
   width:100%;
 }
 
 header h2 {
-  margin-top: -12px;
-  padding-bottom: 7px;
+  margin-top: -17px;
+  padding-bottom: 10px;
 }
 
 footer {
