@@ -52,7 +52,7 @@ nav a:hover {
 }
 
 .active {
-  color: lightyellow;
+  background-color:#E8a87c;
 }
 
 body {
