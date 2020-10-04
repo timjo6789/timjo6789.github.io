@@ -1,0 +1,23 @@
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+  nav {
+    display: flex;
+    border-radius: unset;
+  }
+  
+  nav a:nth-child(1) {
+    border-radius: 0.5rem;
+  }
+  
+  nav a:nth-last-child(1) {
+    border-radius: 0.5rem;
+  }
+
+  nav a {
+    flex: 1 1 100%;
+    align-self: center;
+  }
+
+}
+

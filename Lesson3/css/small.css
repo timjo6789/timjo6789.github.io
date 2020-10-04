@@ -1,0 +1,67 @@
+/* color pallete.
+#E27D60
+#8855DD
+#E8A87C
+#C38D9E
+#41B3A3
+*/
+
+/* Font family
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+*/
+
+:root {
+  --primary-color: #E27D60;
+  --secondary-color: #8855DD;
+  --third-color: #E8A87C;
+  --fourth-color: #C38D9E;
+  --fifth-color: #41B3A3;
+}
+nav {
+  font-family: 'Noto Sans', sans-serif;
+  background-color: var(--primary-color);
+  text-align: center;
+  box-shadow: 0 2px 15px gray;
+  border-radius: 3rem;
+}
+
+nav a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-size: 1.10rem;
+  border-radius: 0.5rem;
+}
+
+nav a:nth-child(1) {
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+}
+
+nav a:nth-last-child(1) {
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+
+
+nav a:hover {
+  background-color: var(--third-color);
+}
+
+.active {
+  color: lightyellow;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+p {
+  font-family: "Work Sans", sans-serif;
+}
+
+.strong {
+  font-weight: bold;
+}
