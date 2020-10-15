@@ -1,0 +1,38 @@
+@media only screen and (min-width: 60em) {
+  /*
+  body {
+    margin: 0 auto;
+    max-width: 75%;
+  }
+  */
+
+  header button {
+    display: none;
+  }
+
+  nav ul {
+    margin-left: 2%;
+  }
+
+  nav ul li {
+    float: left;
+    
+    margin-left: 32px;
+  }
+
+  nav ul.hide {
+    display: block;
+  }
+
+
+  nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.4);
+    padding: .8rem 1rem;
+  }
+
+  nav li:last-child a {
+    border-right: none;
+  }
+
+}
