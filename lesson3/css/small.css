@@ -20,6 +20,7 @@
 }
 
 body {
+  font-family: "Noto Sans", sans-serif;
   padding: 0px 15px;
 }
 
@@ -60,9 +61,6 @@ nav a:hover {
   background-color:#E8a87c;
 }
 
-body {
-  font-family: "Noto Sans", sans-serif;
-}
 p {
   font-family: "Work Sans", sans-serif;
 }
