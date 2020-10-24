@@ -23,5 +23,9 @@
   div.weather-summary span.right-cell {
     justify-self: left;
   }
+  body {
+    margin: 0 auto;
+    max-width: 95%;
+  }
 }
 

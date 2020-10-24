@@ -132,6 +132,9 @@ p {
 .strong {
   font-weight: bold;
 }
+main div {
+  margin-left: 2%;
+}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
