@@ -8,10 +8,8 @@
       name="description"
       content="A home page of a first project of weather website. It contains color scheme, target audience, typography, and a home page. - WDD 230 - Web Frontend Development at BYUI - Idaho"
     />
+
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&amp;family=Work+Sans:wght@500&amp;display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -21,7 +19,9 @@
     <script defer src="javascript/menu_responsive.js"></script>
     <script defer src="javascript/footer_time.js"></script>
     <script defer src="javascript/banner.js"></script>
-
+    <script defer src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script defer src="javascript/load_fonts.js"></script>
+    <script defer src="javascript/weather.js"></script>
   </head>
 <body>
   <div id='banner' class='hidden'>
@@ -49,15 +49,20 @@
   <main>
     <h2>Preston Idaho</h2>
     <div class='hero-placeholder'>
-      <img src="images/weather.png" alt="Cloudy sky with sun beams striking.">
+      <picture>
+        <source media="(min-width: 960px)" srcset="images/weather/1328x645_pixels_at_147KB_240ppi.jpg">
+        <source media="(min-width: 658px)" srcset="images/weather/658x319_pixels_at_29KB_240ppi.jpg">
+        <img src="images/weather/443x215_pixels_at_15KB_240ppi.jpg" alt="Sun shining over beautiful grassland and trees">
+      </picture>
       <div class='weather-summary-header'>
         <h3>Weather Summary</h3>
         <div class='weather-summary'>
           <span class='left-cell'>Currently:</span> <span class='right-cell'>Sunny</span>
-          <span class='left-cell'>Temperature:</span> <span class='right-cell'>76 ℉</span>
+          <span class='left-cell'>Temperature:</span> <span class='right-cell'><span id='temperature'>76</span> ℉</span>
+          <span class='left-cell'>Wind Chill:</span> <span class='right-cell'><span id='wind_chill'>N/A</span></span>
           <span class='left-cell'>Humidity:</span> <span class='right-cell'>69%</span>
           <span class='left-cell'>Percipitation:</span> <span class='right-cell'>0 inches</span>
-          <span class='left-cell'>Wind Speed:</span> <span class='right-cell'>5 mph</span>
+          <span class='left-cell'>Wind Speed:</span> <span class='right-cell'><span id='wind_speed'>5</span> mph</span>
         </div>
       </div>
     </div>
