@@ -3,6 +3,11 @@
     max-width: 95%;
   }
 
+  main {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
   header button {
     display: none;
   }
@@ -32,17 +37,13 @@
     border-right: none;
   }
 
-  div.weather-summary {
-    display: grid;
-    grid-template-columns: 10% 1fr;
-  }
   
-  div.weather-summary span.left-cell {
-    justify-self: right;
+  div.weather-summary-header {
+    width: 25%;
   }
-  
-  div.weather-summary span.right-cell {
-    justify-self: left;
+
+  span.weather-bottom img {  
+    width: 45%;
   }
 
 }

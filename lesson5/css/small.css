@@ -24,6 +24,17 @@ body {
   padding: 0px 15px;
 }
 
+.hidden {
+  display: none;
+}
+
+div#banner {
+  background-color: var(--fifth-color);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2%;
+}
+
 header img.logo {
   padding: 10px;
   width: 6rem;
@@ -121,7 +132,8 @@ div.hero-placeholder img {
 
 div.weather-summary {
   display: grid;
-  grid-template-columns: 22% 1fr;
+  grid-template-columns: 1fr 1fr;
+  width: 42%;
 }
 
 
@@ -135,6 +147,75 @@ p {
 main div {
   margin-left: 2%;
 }
+
+p#five_day_forecast_title {
+  color: white;
+  background-color: var(--secondary-color);
+  text-align: center;
+  border: 1px solid black;
+  margin-bottom: 0rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+div#five_day_forecast_table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  border: 1px solid black;
+  border-bottom: none;
+  background-color:black;
+  column-gap: 1px;
+  row-gap: 1px;
+  margin-left: 0px;
+  margin-bottom: 1rem;
+}
+
+span.weather-top {
+  background-color: var(--fourth-color);
+  padding: 5px 0 5px 0;
+  text-align: center;
+}
+
+span.weather-bottom {
+  background-color:white;
+  text-align: center;
+}
+
+span.weather-bottom img {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+img#article-img {
+  width: 100%;
+}
+
+div.contact {
+  background-color: var(--third-color);
+  padding-top: 0.5rem;
+  margin-left: 0px;
+}
+
+div.contact p {
+  display: flex;
+  align-items: center;
+  padding-left: 2%;
+}
+
+div.contact img#google-map {
+  display: none;
+}
+
+div.contact p img {
+  display:inline-block;
+}
+
+div.contact p span {
+  margin-left: 1rem;
+}
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";
