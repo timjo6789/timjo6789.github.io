@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Techy Progression's Weather Page</title>
+    <meta
+      name="description"
+      content="A home page of a first project of weather website. It contains color scheme, target audience, typography, and a home page. - WDD 230 - Web Frontend Development at BYUI - Idaho"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&amp;family=Work+Sans:wght@500&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
+    <script defer src="javascript/menu_responsive.js"></script>
+    <script defer src="javascript/footer_time.js"></script>
+    <script defer src="javascript/banner.js"></script>
+
+  </head>
+<body>
+  <div id='banner' class='hidden'>
+  </div>
+  <header>
+    <div class='header_top'>
+      <img class='logo' src="images/weather_logo.png" alt="weather logo">
+      <div>
+        <h1>The Weather Site</h1>
+        <p>We like to talk about weather!</p>
+      </div>
+      <button onclick="toggleMenu()">&#9776;</button>
+    </div>
+    <nav class='clearfix'>
+      <ul id='navigation' class='hide responsive'>
+        <li><a href="index.html">Home</a></li>
+        <li class='active'><a href="preston-4.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Preston Idaho</h2>
+    <div class='hero-placeholder'>
+      <img src="images/weather.png" alt="Cloudy sky with sun beams striking.">
+      <div class='weather-summary-header'>
+        <h3>Weather Summary</h3>
+        <div class='weather-summary'>
+          <span class='left-cell'>Currently:</span> <span class='right-cell'>Sunny</span>
+          <span class='left-cell'>Temperature:</span> <span class='right-cell'>76 ℉</span>
+          <span class='left-cell'>Humidity:</span> <span class='right-cell'>69%</span>
+          <span class='left-cell'>Percipitation:</span> <span class='right-cell'>0 inches</span>
+          <span class='left-cell'>Wind Speed:</span> <span class='right-cell'>5 mph</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p id="five_day_forecast_title">Five Day Forecast</p>
+      <div id='five_day_forecast_table'>
+        <span class='weather-top'>Mon</span>
+        <span class='weather-top'>Tue</span>
+        <span class='weather-top'>Wed</span>
+        <span class='weather-top'>Thu</span>
+        <span class='weather-top'>Fri</span>
+        <span class='weather-bottom'><img src='images/sun.png' alt='sun'>89°F</span>
+        <span class='weather-bottom'><img src='images/sun.png' alt='sun'>87°F</span>
+        <span class='weather-bottom'><img src='images/sun.png' alt='sun'>78°F</span>
+        <span class='weather-bottom'><img src='images/sun.png' alt='sun'>75°F</span>
+        <span class='weather-bottom'><img src='images/sun.png' alt='sun'>72°F</span>
+      </div>
+    </div>
+    <div>
+      <h2>Smart kid</h2>
+      <img id='article-img' src="images/hero.png" alt="Child with hoodie">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus fermentum arcu quis mollis. Suspendisse vestibulum dui elit, ut commodo ligula scelerisque eu. Nulla facilisi. Proin porttitor quam a orci porttitor fermentum. Vestibulum tempus enim id bibendum molestie. Mauris fermentum, sapien sed molestie aliquet, ex orci varius lectus, vel consequat lorem diam nec lacus. Integer porta bibendum sapien, ac imperdiet tellus consectetur non. Phasellus pharetra dignissim bibendum. Nunc elementum enim nunc, ut bibendum mauris aliquet a. Duis dolor risus, venenatis id urna sit amet, maximus rhoncus mi. Nam metus enim, venenatis non nisi ac, ultrices porta enim. In pulvinar auctor mauris, ac consectetur massa eleifend sed. Morbi vitae turpis urna. Donec pretium dui eget metus porttitor laoreet. Aliquam auctor consequat orci at condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce pharetra luctus sapien nec luctus. Donec lacus mauris, malesuada vitae ex non, tincidunt pharetra felis. Morbi sodales in odio vitae fermentum. Phasellus placerat venenatis urna, a pulvinar libero semper sed. Vivamus vulputate, leo at tempus auctor, mauris dui condimentum turpis, eu mollis turpis dolor sed mauris. Fusce consequat quam at turpis bibendum, hendrerit venenatis justo egestas. Morbi et dictum arcu, eu aliquet urna. Aenean eu sollicitudin quam. Aliquam quis ligula id orci dignissim tempus. Mauris malesuada elit a ullamcorper suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur ornare erat eu tincidunt gravida. Curabitur mauris metus, efficitur rhoncus ex vel, tristique luctus lorem. Sed eu vehicula velit. Vestibulum viverra ligula ante, a porttitor enim vehicula a. Proin convallis, risus vitae efficitur sodales, nibh massa laoreet diam, sit amet vulputate arcu ligula sit amet magna. Nunc non ex ante. Vestibulum sed consequat odio. Integer a nunc nec sem dictum lobortis nec sit amet sapien.</p>
+    </div>
+    <div class='contact'>
+      <p>The Weather Site</p>
+      <div id="google-map-split">
+        <img id='google-map' src="images/location_map.png" alt="google satilite map of Preston, Idaho, 83263">
+        <div id="social">
+          <p><img src="images/location.png" alt="location"><span>30 N 1st E Preston, ID 83263</span></p>
+          <p><img src="images/phone.png" alt="phone number"><span>999.999.9999</span></p>
+          <p><img src="images/mail.png" alt="email address"><span>theweathersite@tws.com</span></p>
+          <div>
+            <img src="images/facebook.png" alt="facebook">
+            <img src="images/twitter.png" alt="twitter">
+            <img src="images/google_plus.png" alt="google plus">
+            <img src="images/twitch.png" alt="twitch">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div>
+      &copy; <span id="year"></span> | Timothy Johnson | Lehi, Utah |
+      <a href="https://www.byui.edu/online">BYU-I Online Learning</a>
+    </div>
+    <div>LAST UPDATED: <span id="time"></span></div>
+  </footer>
+</body>
+</html>
