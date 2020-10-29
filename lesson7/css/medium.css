@@ -1,0 +1,74 @@
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+
+  div.weather-summary span.left-cell {
+    justify-self: right;
+  }
+  
+  div.weather-summary span.right-cell {
+    justify-self: left;
+  }
+
+  body {
+    margin: 0 auto;
+    max-width: 95%;
+  }
+
+  div.hero-placeholder {
+    position: relative;
+  }
+
+  div.weather-summary {
+    grid-template-columns: 1fr 1fr;
+  }
+  div.weather-summary-header {
+    position: absolute;
+    color: black;
+    background: rgb(53,0,255);
+    background: linear-gradient(90deg, rgba(53,0,255,0.6463557993730408) 0%, rgba(98,169,255,1) 47%, rgba(53,0,255,0.65) 100%);
+    top: 15%;
+    left: 1rem;
+    width: 35%;
+    margin-left: 0px;
+    padding: 0 0 1rem 0;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  div.weather-summary-header h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  div.weather-summary {    
+    width: 100%;
+  }
+
+
+  img#article-img {
+    width: auto;
+    float: right;
+  }
+
+  span.weather-bottom img {  
+    width: 50%;
+  }
+
+  div#google-map-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  div.contact img#google-map {
+    display: block;
+    width: 100%;
+  }
+
+  div#social {
+    align-self: center;
+  }
+
+
+}
+
