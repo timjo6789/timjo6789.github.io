@@ -15,6 +15,12 @@
     max-width: 95%;
   }
 
+  main div.images {
+    margin-left: auto;
+    row-gap: unset;
+    grid-template-columns: 1fr 1fr;
+  }
+
   div.hero-placeholder {
     position: relative;
   }

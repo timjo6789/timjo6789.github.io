@@ -37,7 +37,15 @@
     border-right: none;
   }
 
-  
+  main div.images {
+    margin-left: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  main div.images figure:hover {
+    transform: scale(1.02);
+  }
+
   div.weather-summary-header {
     width: 25%;
   }

@@ -148,6 +148,16 @@ main div {
   margin-left: 2%;
 }
 
+main div.images {
+  margin-left: auto;
+  display: grid;
+  row-gap: 0.5rem;
+}
+
+main div.images img {
+  width: 100%;
+}
+
 p#five_day_forecast_title {
   color: white;
   background-color: var(--secondary-color);
