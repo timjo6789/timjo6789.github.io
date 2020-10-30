@@ -158,16 +158,12 @@ p#five_day_forecast_title {
   padding-bottom: 1rem;
 }
 
+p#five_day_forecast_title {
+  display: none;
+}
+
 div#five_day_forecast_table {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  border: 1px solid black;
-  border-bottom: none;
-  background-color:black;
-  column-gap: 1px;
-  row-gap: 1px;
-  margin-left: 0px;
-  margin-bottom: 1rem;
+  display: none;
 }
 
 span.weather-top {
