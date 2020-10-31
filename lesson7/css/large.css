@@ -13,24 +13,24 @@
   }
 
   nav ul {
-    margin-left: 2%;
+    display: grid;
+    grid-auto-flow: column;
+    margin-left: auto;
   }
 
   nav ul li {
     float: left;
-    
-    margin-left: 32px;
   }
 
   nav ul.hide {
-    display: block;
+    display: grid;
   }
 
 
   nav ul li a {
     border: none;
     border-right: 1px solid rgba(0, 0, 0, 0.4);
-    padding: .8rem 1rem;
+    padding-bottom: 1rem;
   }
 
   nav li:last-child a {

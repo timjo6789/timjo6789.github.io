@@ -47,6 +47,13 @@
 
   p#five_day_forecast_title {
     display: block;
+    color: white;
+    background-color: var(--secondary-color);
+    text-align: center;
+    border: 1px solid black;
+    margin-bottom: 0rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }  
 
   div#five_day_forecast_table {

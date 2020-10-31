@@ -149,16 +149,6 @@ main div {
 }
 
 p#five_day_forecast_title {
-  color: white;
-  background-color: var(--secondary-color);
-  text-align: center;
-  border: 1px solid black;
-  margin-bottom: 0rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-p#five_day_forecast_title {
   display: none;
 }
 
