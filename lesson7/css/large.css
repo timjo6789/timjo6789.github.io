@@ -44,6 +44,7 @@
 
   main div.images figure:hover {
     transform: scale(1.02);
+    box-shadow: 0 0 2rem #333;
   }
 
   div.weather-summary-header {
