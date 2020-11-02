@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Techy Progression's Weather Page</title>
+    <meta
+      name="description"
+      content="A home page of a first project of weather website. It contains color scheme, target audience, typography, and a home page. - WDD 230 - Web Frontend Development at BYUI - Idaho"
+    />
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/lazyload.css">
+    
+    <script defer src="javascript/observe.js"></script>
+    <script defer src="javascript/menu_responsive.js"></script>
+    <script defer src="javascript/footer_time.js"></script>
+    <script defer src="javascript/banner.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script defer src="javascript/load_fonts.js"></script>
+    <script defer src="javascript/weather.js"></script>
+  </head>
+<body>
+  <div id='banner' class='hidden'>
+  </div>
+  <header>
+    <div class='header_top'>
+      <img class='logo' src="images/weather_logo.png" alt="weather logo">
+      <div>
+        <h1>The Weather Site</h1>
+        <p>We like to talk about weather!</p>
+      </div>
+      <button onclick="toggleMenu()">&#9776;</button>
+    </div>
+    <nav class='clearfix'>
+      <ul id='navigation' class='hide responsive'>
+        <li><a href="index.html">Home</a></li>
+        <li class='active'><a href="preston-4.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class='images'>
+      <figure>
+        <img src="images/640x350.png" data-src="images/weather_1.jpg" alt="Purple clouds with many lightnings">
+        <figcaption>Purple clouds with many lightnings</figcaption>
+      </figure>
+      <figure>
+        <img src="images/640x350.png" data-src="images/weather_2.jpg" alt="Blue clouds with a single lightning">
+        <figcaption>Blue clouds with a single lightning</figcaption>
+      </figure>
+      <figure>
+        <img src="images/640x350.png" data-src="images/weather_3.jpg" alt="Orange dark clouds">
+        <figcaption>Orange dark clouds</figcaption>
+      </figure>
+      <figure>
+        <img src="images/640x350.png" data-src="images/weather_4.jpg" alt="Blue clouds with several lightnings">
+        <figcaption>Blue clouds with several lightnings</figcaption>
+      </figure>
+      <figure>
+        <img src="images/640x350.png" data-src="images/weather_5.jpg" alt="Orange clouds with clear sky">
+        <figcaption>Orange clouds with clear sky</figcaption>
+      </figure>
+      <figure>
+        <img src="images/640x350.png" data-src="images/weather_6.jpg" alt="Orange clouds with purple clouds">
+        <figcaption>Orange clouds with purple clouds</figcaption>
+      </figure>
+      <figure>
+        <img src="images/640x350.png" data-src="images/weather_7.jpg" alt="White clouds with trees, road, and grass">
+        <figcaption>White clouds with trees, road, and grass</figcaption>
+      </figure>
+      <figure>
+        <img src="images/640x350.png" data-src="images/weather_8.jpg" alt="Dark orange clouds with dark clouds and sky">
+        <figcaption>Dark orange clouds with dark clouds and sky</figcaption>
+      </figure>
+      <figure>
+        <img src="images/640x350.png" data-src="images/weather_9.jpg" alt="White clouds with green mountains">
+        <figcaption>White clouds with green mountains</figcaption>
+      </figure>
+    </div>
+  </main>
+  <footer>
+    <div>
+      &copy; <span id="year"></span> | Timothy Johnson | Lehi, Utah |
+      <a href="https://www.byui.edu/online">BYU-I Online Learning</a>
+    </div>
+    <div>LAST UPDATED: <span id="time"></span></div>
+  </footer>
+</body>
+</html>
