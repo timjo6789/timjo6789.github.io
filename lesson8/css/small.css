@@ -175,7 +175,7 @@ fieldset textarea {
 
 form input[type=submit] {
   margin-top: 1rem;
-  color: white;
+  color: black;
   background-color: var(--fourth-color);
 }
 
