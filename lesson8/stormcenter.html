@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Techy Progression's Weather Page</title>
+    <meta
+      name="description"
+      content="A page that demonstrates form inputs with storm as an example - WDD 230 - Web Frontend Development at BYUI - Idaho"
+    />
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
+    <script defer src="javascript/menu_responsive.js"></script>
+    <script defer src="javascript/footer_time.js"></script>
+    <script defer src="javascript/banner.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script defer src="javascript/load_fonts.js"></script>
+    <script defer src="javascript/range.js"></script>
+  </head>
+<body>
+  <header>
+    <div class='header_top'>
+      <img class='logo' src="images/weather_logo.png" alt="weather logo">
+      <div>
+        <h1>The Weather Site</h1>
+        <p>We like to talk about weather!</p>
+      </div>
+      <button onclick="toggleMenu()">&#9776;</button>
+    </div>
+    <nav class='clearfix'>
+      <ul id='navigation' class='hide responsive'>
+        <li><a href="index.html">Home</a></li>
+        <li class='active'><a href="preston-4.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form method="GET" action="thanks.html">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label>Full name <input type="text" name="full-name" required pattern="[A-Za-z]+(\s?[A-Za-z])*?" minlength="5" placeholder="John Doe"></label>
+        <label>Email <input type="email" name="email" placeholder="example@gmail.com"></label>
+        <label>Phone number <input type="tel" name="phone" required></label>
+        <label>Zip code <input type="number" name="zip-code" required></label>
+      </fieldset>
+      <fieldset>
+        <legend>Storm Information</legend>
+        <label>Storm date <input type="date" name="storm-date"></label>
+        <label>Storm type
+          <input list="storm-type" name='storm-type'>
+          <datalist id='storm-type'>
+            <option value="Flash Flood">
+            <option value="Hail">
+            <option value="Hurricane">
+            <option value="Thunderstorm">
+            <option value="Tornado">
+          </datalist>
+        </label>
+        <label>Storm severity (1-10): <span id="storm-severity-index">5</span><input oninput="update_storm_severity_index(this)" type="range" min="1" max="10" value="5"></label>
+        <label>Storm region
+          <select name="storm-region">
+            <option value="" disabled>Select Region ...</option>
+            <option value="Preston">Preston</option>
+            <option value="Soda Springs">Soda Springs</option>
+            <option value="Fish Haven">Fish Haven</option>
+          </select>
+        </label>
+        <p>user in-danger level</p>
+        <label class="radio"><input type="radio" name="danger-level" value="Yes"> Yes</label>
+        <label class="radio"><input type="radio" name="danger-level" value="Maybe"> Maybe</label>
+        <label class="radio"><input type="radio" name="danger-level" value="No"> No</label>
+      </fieldset>
+      <fieldset>
+        <legend>Additional Information</legend>
+        <label><textarea name="additional-notes" cols="30" rows="10"></textarea></label>
+      </fieldset>
+      <input type="submit" value="Report My Storm">
+    </form>
+  </main>
+  <footer>
+    <div>
+      &copy; <span id="year"></span> | Timothy Johnson | Lehi, Utah |
+      <a href="https://www.byui.edu/online">BYU-I Online Learning</a>
+    </div>
+    <div>LAST UPDATED: <span id="time"></span></div>
+  </footer>
+</body>
+</html>

@@ -15,6 +15,50 @@
     max-width: 95%;
   }
 
+  /**********************
+  *                    *
+  *     Storm page     *
+  *                    *
+  **********************/
+
+  form input {
+    padding: unset;
+    width: unset;
+  }
+
+  form p {
+    margin-top: 2rem;
+  }
+
+  form select {
+    padding: unset;
+  }
+
+  form input[type=radio] {
+    display: inline-block;
+    width: unset;
+  }
+
+  form label.radio {
+    display: block;
+    padding: unset;
+  }
+
+  fieldset textarea {
+    width: unset;
+  }
+
+  form input[type=submit] {
+    margin-left: 3%;
+    padding: 1rem;
+  }
+
+  /**********************
+   *                    *
+   *    contact page    *
+   *                    *
+   **********************/
+  
   main div.images {
     margin-left: auto;
     row-gap: unset;

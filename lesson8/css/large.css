@@ -37,6 +37,10 @@
     border-right: none;
   }
 
+  form input[type=submit] {
+    margin-left: 1%;
+  }
+
   main div.images {
     margin-left: auto;
     grid-template-columns: 1fr 1fr 1fr;
