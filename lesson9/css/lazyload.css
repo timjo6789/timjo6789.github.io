@@ -1,0 +1,15 @@
+main div {
+  display: grid;
+  justify-content: center;
+  row-gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+main img[data-src] {
+  filter: blur(0.5rem);
+}
+
+main img {
+  filter: blur(0);
+  transition: filter 0.5s;
+}

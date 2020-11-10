@@ -1,0 +1,62 @@
+@media only screen and (min-width: 60em) {
+  body {
+    max-width: 95%;
+  }
+
+  main {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  header button {
+    display: none;
+  }
+
+  nav ul {
+    display: grid;
+    grid-auto-flow: column;
+    margin-left: auto;
+  }
+
+  nav ul li {
+    float: left;
+  }
+
+  nav ul.hide {
+    display: grid;
+  }
+
+
+  nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.4);
+    padding-bottom: 1rem;
+  }
+
+  nav li:last-child a {
+    border-right: none;
+  }
+
+  form input[type=submit] {
+    margin-left: 1%;
+  }
+
+  main div.images {
+    margin-left: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  main div.images figure:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 2rem #333;
+  }
+
+  div.weather-summary-header {
+    width: 25%;
+  }
+
+  span.weather-bottom img {  
+    width: 45%;
+  }
+
+}
