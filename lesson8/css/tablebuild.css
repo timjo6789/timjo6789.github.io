@@ -10,7 +10,7 @@ table {
 
 table thead tr:nth-of-type(1) th {
   color: black;
-  background-color: #e7f0ed;
+  background-color: #7fb9c2;
   font-size: 1.3rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -33,6 +33,10 @@ table th {
   padding: 0.3rem;
 }
 
+tbody tr {
+  background-color: #e7f0ed;
+}
+
 tbody tr:nth-child(even) {
   background-color: #e7ffed;
 }
@@ -43,7 +47,7 @@ tbody tr:nth-of-type(5) td:first-child {
 
 tfoot td {
   color: black;
-  background-color: #e7f0ed;
+  background-color: #7fb9c2;
   font-size: 0.75rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
