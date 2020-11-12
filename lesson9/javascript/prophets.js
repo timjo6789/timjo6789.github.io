@@ -11,9 +11,13 @@ fetch(prophets_URL)
         <h2>${each.name} ${each.lastname}</h2>
         <div>Date of Birth: ${each.birthdate}</div>
         <div>Place of Birth: ${each.birthplace}</div>
-        <img src="${each.imageurl}" alt="${each.name} ${each.lastname} - prophet #${each.order}">
+        <img src="images/300x400.jpg" data-src="${each.imageurl}" alt="${each.name} ${each.lastname} - prophet #${each.order}">
       `;
 
       document.querySelector('div.cards').appendChild(card);
     }
+    
+    let script = document.createElement('script');
+    script.src = "javascript/observe.js";
+    document.querySelector('head').appendChild(script);
   });
