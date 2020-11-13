@@ -9,6 +9,49 @@
   div.weather-summary span.right-cell {
     justify-self: left;
   }
+  header h1 {
+    font-size: 2em;
+  }
+  /*************************************
+  *            CSS cards              *
+  * dynamically created by JavaScript *
+  *************************************/
+
+  div#cards {
+    /* grid-template-columns: 1fr; */
+    row-gap: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: white;
+  }
+
+  div#cards section {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  div#cards span h2 {
+    margin-top: 0;
+  }
+
+  div#cards section:nth-of-type(even) span {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+  div#cards section:nth-of-type(even) img {
+    color:blue;
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  div#cards img {
+    width: unset;
+    margin: unset;
+    align-self: center;
+    justify-self: center;
+  }
 
   /**********************
   *                    *

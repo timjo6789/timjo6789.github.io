@@ -20,6 +20,7 @@
     
     <script defer src="javascript/menu_responsive.js"></script>
     <script defer src="javascript/footer_time.js"></script>
+    <script defer src="javascript/index_cards.js"></script>
 
   </head>
 <body>
@@ -42,10 +43,41 @@
       </ul>
     </nav>
   </header>
-  <h1>Techy Progression's Weather Page</h1>
-  <h2>techyprogression.com (registered by me before this class)</h2>
-  <h3>Site purpose</h3>
-  <p>The purpose of this page is to provide the cost weight depending on the weather. The worser the weather, the cheaper we provide for services. Who doesn't love cheaper prices?</p>
-  <img src="images/weather_logo.png" alt="Weather logo">
+  <main>
+    <div class='hero-placeholder'>
+      <img src="images/weather.png" alt="Cloudy sky with sun beams striking.">
+    </div>
+    <div id='cards'>
+    </div>
+    <div>
+      <h2>Smart kid</h2>
+      <img id='article-img' src="images/hero.png" alt="Child with hoodie">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus fermentum arcu quis mollis. Suspendisse vestibulum dui elit, ut commodo ligula scelerisque eu. Nulla facilisi. Proin porttitor quam a orci porttitor fermentum. Vestibulum tempus enim id bibendum molestie. Mauris fermentum, sapien sed molestie aliquet, ex orci varius lectus, vel consequat lorem diam nec lacus. Integer porta bibendum sapien, ac imperdiet tellus consectetur non. Phasellus pharetra dignissim bibendum. Nunc elementum enim nunc, ut bibendum mauris aliquet a. Duis dolor risus, venenatis id urna sit amet, maximus rhoncus mi. Nam metus enim, venenatis non nisi ac, ultrices porta enim. In pulvinar auctor mauris, ac consectetur massa eleifend sed. Morbi vitae turpis urna. Donec pretium dui eget metus porttitor laoreet. Aliquam auctor consequat orci at condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce pharetra luctus sapien nec luctus. Donec lacus mauris, malesuada vitae ex non, tincidunt pharetra felis. Morbi sodales in odio vitae fermentum. Phasellus placerat venenatis urna, a pulvinar libero semper sed. Vivamus vulputate, leo at tempus auctor, mauris dui condimentum turpis, eu mollis turpis dolor sed mauris. Fusce consequat quam at turpis bibendum, hendrerit venenatis justo egestas. Morbi et dictum arcu, eu aliquet urna. Aenean eu sollicitudin quam. Aliquam quis ligula id orci dignissim tempus. Mauris malesuada elit a ullamcorper suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur ornare erat eu tincidunt gravida. Curabitur mauris metus, efficitur rhoncus ex vel, tristique luctus lorem. Sed eu vehicula velit. Vestibulum viverra ligula ante, a porttitor enim vehicula a. Proin convallis, risus vitae efficitur sodales, nibh massa laoreet diam, sit amet vulputate arcu ligula sit amet magna. Nunc non ex ante. Vestibulum sed consequat odio. Integer a nunc nec sem dictum lobortis nec sit amet sapien.</p>
+    </div>
+    <div class='contact'>
+      <p>The Weather Site</p>
+      <div id="google-map-split">
+        <img id='google-map' src="images/location_map.png" alt="google satilite map of Preston, Idaho, 83263">
+        <div id="social">
+          <p><img src="images/location.png" alt="location"><span>30 N 1st E Preston, ID 83263</span></p>
+          <p><img src="images/phone.png" alt="phone number"><span>999.999.9999</span></p>
+          <p><img src="images/mail.png" alt="email address"><span>theweathersite@tws.com</span></p>
+          <div>
+            <img src="images/facebook.png" alt="facebook">
+            <img src="images/twitter.png" alt="twitter">
+            <img src="images/google_plus.png" alt="google plus">
+            <img src="images/twitch.png" alt="twitch">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div>
+      &copy; <span id="year"></span> | Timothy Johnson | Lehi, Utah |
+      <a href="https://www.byui.edu/online">BYU-I Online Learning</a>
+    </div>
+    <div>LAST UPDATED: <span id="time"></span></div>
+  </footer>
 </body>
 </html>
