@@ -22,12 +22,12 @@ function preston_forecast(json_data){
 
 function api_image(json_data){
   json_data = json_data['weather'][0];
-  source = `http://api.openweathermap.org/img/w/${json_data['icon']}.png`;
+  source = `https://api.openweathermap.org/img/w/${json_data['icon']}.png`;
   return `<img src="${source}" alt="${json_data['description']}">`;
 }
 
 bind_fetch = (function_call, link) => fetch(link).then((response) => response.json()).then((json_data) => function_call(json_data));
-template = (type, id) => `http://api.openweathermap.org/data/2.5/${type}?id=${id}&appid=${APPID}&units=imperial`;
+template = (type, id) => `https://api.openweathermap.org/data/2.5/${type}?id=${id}&appid=${APPID}&units=imperial`;
 
 bind_fetch(preston_weather, template('weather', PRESTON_ID));
 bind_fetch(preston_forecast, template('forecast', PRESTON_ID));
