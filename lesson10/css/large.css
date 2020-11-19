@@ -1,0 +1,104 @@
+@media only screen and (min-width: 60em) {
+
+  main {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  header button {
+    display: none;
+  }
+
+  nav ul {
+    display: grid;
+    grid-auto-flow: column;
+    margin-left: auto;
+  }
+
+  nav ul li {
+    float: left;
+  }
+
+  nav ul.hide {
+    display: grid;
+  }
+
+
+  nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.4);
+    padding-bottom: 1rem;
+  }
+
+  nav li:last-child a {
+    border-right: none;
+  }
+
+  /*************************************
+  *            CSS cards              *
+  * dynamically created by JavaScript *
+  *************************************/
+
+  div#cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: unset;
+    column-gap: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: var(--secondary-color);
+  }
+
+  div#cards section {
+    display: block;
+    justify-self: center;
+    align-self: end;
+    max-width: 85%;
+  }
+
+  div#cards span h2 {
+    font-size: 1.5rem;
+  }
+
+  div#cards section:nth-of-type(even) span {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+  div#cards section:nth-of-type(even) img {
+    color:blue;
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  div#cards img {
+    width: 100%;
+    margin: unset;
+    margin-bottom: -19px;
+  }
+
+  /*************************************
+  *             other css              *
+  *************************************/
+
+  form input[type=submit] {
+    margin-left: 1%;
+  }
+
+  main div.images {
+    margin-left: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  main div.images figure:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 2rem #333;
+  }
+
+  div.weather-summary-header {
+    width: 25%;
+  }
+
+  span.weather-bottom img {  
+    width: 45%;
+  }
+
+}

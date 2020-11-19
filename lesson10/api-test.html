@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Techy Progression's Weather Page</title>
+    <meta
+      name="description"
+      content="A home page of a first project of weather website. It contains color scheme, target audience, typography, and a home page. - WDD 230 - Web Frontend Development at BYUI - Idaho"
+    />
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
+    <script defer src="javascript/menu_responsive.js"></script>
+    <script defer src="javascript/footer_time.js"></script>
+    <script defer src="javascript/banner.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script defer src="javascript/load_fonts.js"></script>
+    <script defer src="javascript/weather.js"></script>
+    <script defer src="javascript/weatherapi.js"></script>
+  </head>
+<body>
+  <div id='banner' class='hidden'>
+  </div>
+  <header>
+    <div class='header_top'>
+      <img class='logo' src="images/weather_logo.png" alt="weather logo">
+      <div>
+        <h1>The Weather Site</h1>
+        <p>We like to talk about weather!</p>
+      </div>
+      <button onclick="toggleMenu()">&#9776;</button>
+    </div>
+    <nav class='clearfix'>
+      <ul id='navigation' class='hide responsive'>
+        <li><a href="index.html">Home</a></li>
+        <li class='active'><a href="preston-4.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div>
+      Temperature: <span id='temperature'></span>
+      <img id='icon'>
+      <span id='image_source'></span>
+    </div>
+  </main>
+  <footer>
+    <div>
+      &copy; <span id="year"></span> | Timothy Johnson | Lehi, Utah |
+      <a href="https://www.byui.edu/online">BYU-I Online Learning</a>
+    </div>
+    <div>LAST UPDATED: <span id="time"></span></div>
+  </footer>
+</body>
+</html>
