@@ -236,7 +236,7 @@ div.hero-placeholder img {
 div.weather-summary {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 50%;
+  width: 69%;
 }
 
 
