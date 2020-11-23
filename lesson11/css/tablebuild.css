@@ -1,0 +1,51 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+  box-shadow: 0.2rem 0.1rem 8px slategray;
+}
+
+table thead tr:nth-of-type(1) th {
+  color: black;
+  background-color: #e7f0ed;
+  font-size: 1.3rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-weight: bolder;
+}
+
+thead th {
+  color: white;
+  background-color: #628ca6;
+}
+
+td.goal-met {
+  color: white;
+  background-color: #628ca6;
+}
+
+table td,
+table th {
+  border: 1px solid gray;
+  padding: 0.3rem;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e7ffed;
+}
+
+tbody tr:nth-of-type(5) td:first-child {
+  font-style: italic;
+}
+
+tfoot td {
+  color: black;
+  background-color: #e7f0ed;
+  font-size: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+
+}

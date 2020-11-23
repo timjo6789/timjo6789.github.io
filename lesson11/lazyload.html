@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Techy Progression's Weather Page</title>
+    <meta
+      name="description"
+      content="A side project to demonstrate lazy loading images - WDD 230 - Web Frontend Development at BYUI - Idaho"
+    />
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/lazyload.css">
+    
+    <script defer src="javascript/observe.js"></script>
+    <script defer src="javascript/menu_responsive.js"></script>
+    <script defer src="javascript/footer_time.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script defer src="javascript/load_fonts.js"></script>
+  </head>
+<body>
+  <div id='banner' class='hidden'>
+  </div>
+  <header>
+    <div class='header_top'>
+      <img class='logo' src="images/weather_logo.png" alt="weather logo">
+      <div>
+        <h1>The Weather Site</h1>
+        <p>We like to talk about weather!</p>
+      </div>
+      <button onclick="toggleMenu()">&#9776;</button>
+    </div>
+    <nav class='clearfix'>
+      <ul id='navigation' class='hide responsive'>
+        <li><a href="index.html">Home</a></li>
+        <li class='active'><a href="preston-4.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>hey.</h1>
+    <div>
+      <img src="images/300x400.jpg" data-src="images/group_1.jpg" alt="Wall colorful stone tiling">
+      <img src="images/300x400.jpg" data-src="images/group_2.jpg" alt='It reads "This is the sign you&rsquo;ve been looking for" in neon pipes'>
+      <img src="images/300x400.jpg" data-src="images/group_3.jpg" alt="Colorful smooth rocks">
+      <img src="images/300x400.jpg" data-src="images/group_4.jpg" alt="Colorful shiny smooth rocks">
+      <img src="images/300x400.jpg" data-src="images/group_5.jpg" alt="Green paint mixed with purple paint and red paint">
+      <img src="images/300x400.jpg" data-src="images/group_6.jpg" alt="Natural dark, cool rocks">
+    </div>
+  </main>
+  <footer>
+    <div>
+      &copy; <span id="year"></span> | Timothy Johnson | Lehi, Utah |
+      <a href="https://www.byui.edu/online">BYU-I Online Learning</a>
+    </div>
+    <div>LAST UPDATED: <span id="time"></span></div>
+  </footer>
+</body>
+</html>

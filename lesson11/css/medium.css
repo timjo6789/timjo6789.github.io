@@ -1,0 +1,186 @@
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+
+  div.weather-summary span.left-cell {
+    justify-self: right;
+  }
+  
+  div.weather-summary span.right-cell {
+    justify-self: left;
+  }
+  header h1 {
+    font-size: 2em;
+  }
+  /*************************************
+  *            CSS cards              *
+  * dynamically created by JavaScript *
+  *************************************/
+
+  div#cards {
+    /* grid-template-columns: 1fr; */
+    row-gap: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: white;
+  }
+
+  div#cards section {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  div#cards span h2 {
+    margin-top: 0;
+  }
+
+  div#cards section:nth-of-type(even) span {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+  div#cards section:nth-of-type(even) img {
+    color:blue;
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  div#cards img {
+    width: unset;
+    margin: unset;
+    align-self: center;
+    justify-self: center;
+  }
+
+  /**********************
+  *                    *
+  *     Storm page     *
+  *                    *
+  **********************/
+
+  form input {
+    padding: unset;
+    width: unset;
+  }
+
+  form p {
+    margin-top: 2rem;
+  }
+
+  form select {
+    padding: unset;
+  }
+
+  form input[type=radio] {
+    display: inline-block;
+    width: unset;
+  }
+
+  form label.radio {
+    display: block;
+    padding: unset;
+  }
+
+  fieldset textarea {
+    display: block;
+    width: unset;
+  }
+
+  form input[type=submit] {
+    margin-left: 3%;
+    padding: 1rem;
+  }
+
+  /**********************
+   *                    *
+   *    contact page    *
+   *                    *
+   **********************/
+  
+  main div.images {
+    margin-left: auto;
+    row-gap: unset;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  div.hero-placeholder {
+    position: relative;
+  }
+
+  div.weather-summary {
+    grid-template-columns: 1fr 1fr;
+  }
+  div.weather-summary-header {
+    position: absolute;
+    color: black;
+    background: rgb(53,0,255);
+    background: linear-gradient(90deg, rgba(53,0,255,0.6463557993730408) 0%, rgba(98,169,255,1) 47%, rgba(53,0,255,0.65) 100%);
+    top: 15%;
+    left: 1rem;
+    width: 35%;
+    margin-left: 0px;
+    padding: 0 0 1rem 0;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  div.weather-summary-header h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  div.weather-summary {    
+    width: 100%;
+  }
+
+  p#five_day_forecast_title {
+    display: block;
+    color: white;
+    background-color: var(--secondary-color);
+    text-align: center;
+    border: 1px solid black;
+    margin-bottom: 0rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }  
+
+  div#five_day_forecast_table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border: 1px solid black;
+    border-bottom: none;
+    background-color:black;
+    column-gap: 1px;
+    row-gap: 1px;
+    margin-left: 0px;
+    margin-bottom: 1rem;
+  }
+
+
+  img#article-img {
+    width: auto;
+    float: right;
+  }
+
+  span.weather-bottom img {  
+    width: 50%;
+  }
+
+  div#google-map-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  div.contact img#google-map {
+    display: block;
+    width: 100%;
+  }
+
+  div#social {
+    align-self: center;
+  }
+
+
+}
+
