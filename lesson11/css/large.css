@@ -94,11 +94,17 @@
   }
 
   div.weather-summary-header {
+    left: 5rem;
     width: 25%;
   }
 
   span.weather-bottom img {  
     width: 45%;
+  }
+
+  footer {
+    width: 90%;
+    margin: 0 auto;
   }
 
 }
