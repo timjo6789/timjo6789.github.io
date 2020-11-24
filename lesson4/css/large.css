@@ -30,4 +30,13 @@
     border-right: none;
   }
 
+  main {
+    width: 85%;
+  }
+
+  footer {
+    width: 90%;
+    margin: 0 auto;
+  }
+
 }

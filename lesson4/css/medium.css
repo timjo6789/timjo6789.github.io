@@ -1,7 +1,10 @@
 
 /* Tablet Views ******************************/
 @media only screen and (min-width: 37.5em) {
-
+  main {
+    width: 75%;
+    margin: 0 auto;
+  }
   /*
   nav {
     display: flex;
