@@ -20,7 +20,7 @@ fetch(town_json)
         <span>Population: ${town.currentPopulation}</span>
         <span>Annual Rain Fall: ${town.averageRainfall}</span>
       </span>
-      <img src="images/300x400.jpg" data-src="images/town/${town.photo}" alt="${town.name} hero photo">
+      <img src="images/placeholder/300x400.jpg" data-src="images/town/${town.photo}" alt="${town.name} hero photo">
       `;
 
       document.querySelector('div#cards').appendChild(card);
