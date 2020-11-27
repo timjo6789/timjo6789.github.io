@@ -125,6 +125,21 @@ nav a:hover {
   background-color: rgba(232, 168, 124, 0.6);
 }
 
+h2 {  
+  text-align: center;
+}
+
+/*************************************
+ *           Local Events            *
+ * dynamically created by JavaScript *
+ *************************************/
+
+ div.town_event {
+  text-align: center;
+  margin: 2rem;
+  font-size: 1.25rem;
+ }
+
 /*************************************
  *            CSS cards              *
  * dynamically created by JavaScript *

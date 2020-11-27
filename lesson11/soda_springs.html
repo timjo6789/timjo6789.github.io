@@ -19,14 +19,16 @@
     <script>
       // configure api to use Soda Springs
       const TOWN_ID = 5607916;
+      const CURRENT_TOWN_POSITION = 6;
     </script>
     <script defer src="javascript/menu_responsive.js"></script>
     <script defer src="javascript/footer_time.js"></script>
-    <script defer src="javascript/banner.js"></script>
+    <!-- <script defer src="javascript/banner.js"></script> -->
     <script defer src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script defer src="javascript/load_fonts.js"></script>
     <script defer src="javascript/weather.js"></script>
     <script defer src="javascript/weatherapi.js"></script>
+    <script defer src="javascript/events.js"></script>
   </head>
 <body>
   <div id='banner' class='hidden'>
@@ -86,16 +88,21 @@
       </div>
     </div>
     <div>
-      <h2>Smart kid</h2>
-      <img id='article-img' src="images/heros/hero.png" alt="Child with hoodie">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus fermentum arcu quis mollis. Suspendisse vestibulum dui elit, ut commodo ligula scelerisque eu. Nulla facilisi. Proin porttitor quam a orci porttitor fermentum. Vestibulum tempus enim id bibendum molestie. Mauris fermentum, sapien sed molestie aliquet, ex orci varius lectus, vel consequat lorem diam nec lacus. Integer porta bibendum sapien, ac imperdiet tellus consectetur non. Phasellus pharetra dignissim bibendum. Nunc elementum enim nunc, ut bibendum mauris aliquet a. Duis dolor risus, venenatis id urna sit amet, maximus rhoncus mi. Nam metus enim, venenatis non nisi ac, ultrices porta enim. In pulvinar auctor mauris, ac consectetur massa eleifend sed. Morbi vitae turpis urna. Donec pretium dui eget metus porttitor laoreet. Aliquam auctor consequat orci at condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce pharetra luctus sapien nec luctus. Donec lacus mauris, malesuada vitae ex non, tincidunt pharetra felis. Morbi sodales in odio vitae fermentum. Phasellus placerat venenatis urna, a pulvinar libero semper sed. Vivamus vulputate, leo at tempus auctor, mauris dui condimentum turpis, eu mollis turpis dolor sed mauris. Fusce consequat quam at turpis bibendum, hendrerit venenatis justo egestas. Morbi et dictum arcu, eu aliquet urna. Aenean eu sollicitudin quam. Aliquam quis ligula id orci dignissim tempus. Mauris malesuada elit a ullamcorper suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur ornare erat eu tincidunt gravida. Curabitur mauris metus, efficitur rhoncus ex vel, tristique luctus lorem. Sed eu vehicula velit. Vestibulum viverra ligula ante, a porttitor enim vehicula a. Proin convallis, risus vitae efficitur sodales, nibh massa laoreet diam, sit amet vulputate arcu ligula sit amet magna. Nunc non ex ante. Vestibulum sed consequat odio. Integer a nunc nec sem dictum lobortis nec sit amet sapien.</p>
+      <h2>Local Events</h2>
+      <div id='events'></div>
+    </div>
+    <div>
+      <h2>Smart Move Bob</h2>
+      <img id='article-img' src="images/heros/angry_gamer.jpg" alt="Angry gamer playing on computer.">
+      <p>Once upon a time, there was this guy named Bob, he had no idea what he is doing. You can see his face full of pain. He used a highly specialized headset that enables him to cheat but by cheating, he experiences the pain. The things that enables him to cheat are knowing the location of other players, shoot bazooka instead of bullets. You know, all that jazz. Then suddenly, the blue light glows as mom shouted at Alexa to turn on the lights to try and get Bob's attention. Bob is so into the game that he never saw the blue glow behind him. He goes to McDonald for master college. They taught him all the tricks of deep frying french fries. By learning how to do this, he can produce some as he plays the game. What a legend. He told me, "You guys are still reading this? Wow go outside sheesh." I was shocked and angry that he broke the fourth wall. I went home and cried for hours on end. I finally composed myself and continue writing the story of Bob. He was born with perfect teeth but they fell out and now he has fake bionic teeth. He has 127 siblings and he is the youngest, this explains why he has a lot of nice things such as nice face, nice shirt, nice wall pictures, nice headset, nice nose, nice hands, nice keyboard, and nice mouse. His 127 siblings pays him money. He will never work again because he does Twitch where he goes twitching in gaming and people pay him for twitching. Like an actual twitching and shaking, people felt sorry for him. This is because he is cheating and in pain. As such it causes him to twitch all the time. Pun intented. He never knew his father because his father went out to war against the moon. His father died trying to save humanity and no one knew about it except his father and me. And now you know about this hidden war. The moon is so huge and ridiculus that it's fake. Bravo.</p>
+      <p>Credited by 12 year old student</p>
     </div>
     <div class='contact'>
       <p>The Weather Site</p>
       <div id="google-map-split">
-        <img id='google-map' src="images/bottom/location_map.png" alt="google satilite map of Preston, Idaho, 83263">
+        <img id='google-map' src="images/bottom/soda_springs.png" alt="google satilite map of Soda Springs, Idaho, 83276">
         <div id="social">
-          <p><img src="images/bottom/location.png" alt="location"><span>30 N 1st E Preston, ID 83263</span></p>
+          <p><img src="images/bottom/location.png" alt="location"><span>400 N 200 E Soda Springs, ID 83276</span></p>
           <p><img src="images/bottom/phone.png" alt="phone number"><span>999.999.9999</span></p>
           <p><img src="images/bottom/mail.png" alt="email address"><span>theweathersite@tws.com</span></p>
           <div>

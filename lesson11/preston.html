@@ -19,6 +19,7 @@
     <script>
       // configure api to use Preston
       const TOWN_ID = 5604473;
+      const CURRENT_TOWN_POSITION = 5;
     </script>
     <script defer src="javascript/menu_responsive.js"></script>
     <script defer src="javascript/footer_time.js"></script>
@@ -27,6 +28,7 @@
     <script defer src="javascript/load_fonts.js"></script>
     <script defer src="javascript/weather.js"></script>
     <script defer src="javascript/weatherapi.js"></script>
+    <script defer src="javascript/events.js"></script>
   </head>
 <body>
   <div id='banner' class='hidden'>
@@ -86,6 +88,10 @@
       </div>
     </div>
     <div>
+      <h2>Local Events</h2>
+      <div id='events'></div>
+    </div>
+    <div>
       <h2>Smart kid</h2>
       <img id='article-img' src="images/heros/hero.png" alt="Child with hoodie">
       <p>He goes to Preston Jr. High. His GPA is perfect 4.0. They held celebration for his preservance and success in completing each class with straight A's. During an interview, he said that his secret to success is to not take summer off and read a lot and a lot of books. He started reading a lot when he was in 4th grade ranging from sci-fi and fantasy to nonfiction novels, science, and history. He even read all kinds of William Shakespeare with ease in 6th grade. He is the sole child of two wonderful parents. Their family made a lot of money when he was in 4th grade. That's when the parents made the decision to require him to read books and lucky for him, he quickly loved to read and he would have discussion with his parents about what he read. </p>
@@ -96,7 +102,7 @@
     <div class='contact'>
       <p>The Weather Site</p>
       <div id="google-map-split">
-        <img id='google-map' src="images/bottom/location_map.png" alt="google satilite map of Preston, Idaho, 83263">
+        <img id='google-map' src="images/bottom/preston_map.png" alt="google satilite map of Preston, Idaho, 83263">
         <div id="social">
           <p><img src="images/bottom/location.png" alt="location"><span>30 N 1st E Preston, ID 83263</span></p>
           <p><img src="images/bottom/phone.png" alt="phone number"><span>999.999.9999</span></p>

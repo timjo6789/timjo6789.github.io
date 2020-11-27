@@ -12,11 +12,19 @@ function weather(json_data){
   setText('span#humidity', json_data['main']['humidity']);
 }
 
+day_of_week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
 function forecast(json_data){
+  weather_top = document.querySelectorAll(`span.weather-top`);
   weather_bottom = document.querySelectorAll(`span.weather-bottom`);
+
   forcasts = json_data['list'].filter(each => each['dt_txt'].split(' ')[1] == '18:00:00');
-  for (let i = 0; i < 5; i++)
+  current_day = new Date();
+  for (let i = 0; i < 5; i++) {
+    current_day.setTime(forcasts[i]['dt']* 1000);
+    weather_top[i].innerHTML = day_of_week[current_day.getDay()];
     weather_bottom[i].innerHTML = `${api_image(forcasts[i])} ${forcasts[i]['main']['temp']}°F`;
+  }
 }
 
 function api_image(json_data){

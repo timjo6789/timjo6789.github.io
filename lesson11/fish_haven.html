@@ -19,14 +19,16 @@
     <script>
       // configure api to use Fish Haven
       const TOWN_ID = 5595277;
+      const CURRENT_TOWN_POSITION = 1;
     </script>
     <script defer src="javascript/menu_responsive.js"></script>
     <script defer src="javascript/footer_time.js"></script>
-    <script defer src="javascript/banner.js"></script>
+    <!-- <script defer src="javascript/banner.js"></script> -->
     <script defer src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script defer src="javascript/load_fonts.js"></script>
     <script defer src="javascript/weather.js"></script>
     <script defer src="javascript/weatherapi.js"></script>
+    <script defer src="javascript/events.js"></script>
   </head>
 <body>
   <div id='banner' class='hidden'>
@@ -86,16 +88,21 @@
       </div>
     </div>
     <div>
-      <h2>Smart kid</h2>
-      <img id='article-img' src="images/heros/hero.png" alt="Child with hoodie">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus fermentum arcu quis mollis. Suspendisse vestibulum dui elit, ut commodo ligula scelerisque eu. Nulla facilisi. Proin porttitor quam a orci porttitor fermentum. Vestibulum tempus enim id bibendum molestie. Mauris fermentum, sapien sed molestie aliquet, ex orci varius lectus, vel consequat lorem diam nec lacus. Integer porta bibendum sapien, ac imperdiet tellus consectetur non. Phasellus pharetra dignissim bibendum. Nunc elementum enim nunc, ut bibendum mauris aliquet a. Duis dolor risus, venenatis id urna sit amet, maximus rhoncus mi. Nam metus enim, venenatis non nisi ac, ultrices porta enim. In pulvinar auctor mauris, ac consectetur massa eleifend sed. Morbi vitae turpis urna. Donec pretium dui eget metus porttitor laoreet. Aliquam auctor consequat orci at condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce pharetra luctus sapien nec luctus. Donec lacus mauris, malesuada vitae ex non, tincidunt pharetra felis. Morbi sodales in odio vitae fermentum. Phasellus placerat venenatis urna, a pulvinar libero semper sed. Vivamus vulputate, leo at tempus auctor, mauris dui condimentum turpis, eu mollis turpis dolor sed mauris. Fusce consequat quam at turpis bibendum, hendrerit venenatis justo egestas. Morbi et dictum arcu, eu aliquet urna. Aenean eu sollicitudin quam. Aliquam quis ligula id orci dignissim tempus. Mauris malesuada elit a ullamcorper suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur ornare erat eu tincidunt gravida. Curabitur mauris metus, efficitur rhoncus ex vel, tristique luctus lorem. Sed eu vehicula velit. Vestibulum viverra ligula ante, a porttitor enim vehicula a. Proin convallis, risus vitae efficitur sodales, nibh massa laoreet diam, sit amet vulputate arcu ligula sit amet magna. Nunc non ex ante. Vestibulum sed consequat odio. Integer a nunc nec sem dictum lobortis nec sit amet sapien.</p>
+      <h2>Local Events</h2>
+      <div id='events'></div>
+    </div>
+    <div>
+      <h2>Smart Explosion</h2>
+      <img id='article-img' src="images/heros/explosion.jpg" alt="Fire ball explosion">
+      <p>The explosion is epic. If you don't like seeing one, you're crazy because it's the best view ever. It's even better than going to DisneyLand for some "fun" attraction. In fact, it's better than humanity landing on Mars simply because it requires explosion to get there in the first place. Every spacecraft ever used explosion. Think about that, it's more popular than rockets itself. There is even records of it throughout the history such as volcanic eruption and moon crashing into Earth millions of years ago. Everything started from the BIG Bang, the universe's biggest explosion EVER *proof needed*. Without explosion we wouldn't be able to carry tons and tons of precious cargo on the ocean. Without it, we'd all be too cold in winter and too hot in summer. Explosion is a truly remarkable piece of nature. It's a way of nature of being angry and excited. With explosion continents divided. Even the sun is so explosy that it's called a supernova explosion because it produce so much heat enough to warm a planet like earth from so far away, even just 8 light-minute away. Even your heart explodes form pumping blood by using ATP energy violently *study needed*. See? no one can live without explosion. Now the exact opposite of explosion is entropy. Without entropy, we'd all die from continously increasing energy and heat which would boil the planet away. Entropy is how stopping happens. We have to keep moving in order to beat entropy but entropy wins over everything. It doesn't care because it got time on it side and can take millions of years to achieve it. Houses flatten, cities toppled, farms overrunned. Be grateful for entropy and explosion. They balance each other out.</p>
+      <p>Credited by Billy</p>
     </div>
     <div class='contact'>
       <p>The Weather Site</p>
       <div id="google-map-split">
-        <img id='google-map' src="images/bottom/location_map.png" alt="google satilite map of Preston, Idaho, 83263">
+        <img id='google-map' src="images/bottom/fish_haven.png" alt="google satilite map of Fish Haven, Idaho, 83287">
         <div id="social">
-          <p><img src="images/bottom/location.png" alt="location"><span>30 N 1st E Preston, ID 83263</span></p>
+          <p><img src="images/bottom/location.png" alt="location"><span>300 N 200 E Fish Haven, ID 83287</span></p>
           <p><img src="images/bottom/phone.png" alt="phone number"><span>999.999.9999</span></p>
           <p><img src="images/bottom/mail.png" alt="email address"><span>theweathersite@tws.com</span></p>
           <div>
