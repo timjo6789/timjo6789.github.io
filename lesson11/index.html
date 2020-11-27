@@ -8,19 +8,26 @@
       name="description"
       content="A home page of a first project of weather website. It contains color scheme, target audience, typography, and a home page. - WDD 230 - Web Frontend Development at BYUI - Idaho"
     />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&amp;family=Work+Sans:wght@500&amp;display=swap" rel="stylesheet">
+    <link rel="preload" href="css/small.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/medium.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/large.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
+    <noscript>
+      <link rel="stylesheet" href="css/small.css">
+      <link rel="stylesheet" href="css/medium.css">
+      <link rel="stylesheet" href="css/large.css">
+      <link rel="stylesheet" href="css/footer.css">
+    </noscript>
 
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
-    <link rel="stylesheet" href="css/footer.css">
     
     <script defer src="javascript/menu_responsive.js"></script>
     <script defer src="javascript/footer_time.js"></script>
     <script defer src="javascript/index_cards.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script defer src="javascript/load_fonts.js"></script>
 
   </head>
 <body>
