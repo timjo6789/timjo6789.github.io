@@ -172,6 +172,11 @@
     width: 50%;
   }
 
+  span.weather-bottom span {
+    display: block;
+    margin-top: 1rem;
+  }
+
   div#google-map-split {
     display: grid;
     grid-template-columns: 1fr 1fr;

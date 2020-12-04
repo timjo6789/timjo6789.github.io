@@ -23,7 +23,7 @@ function forecast(json_data){
   for (let i = 0; i < 5; i++) {
     current_day.setTime(forcasts[i]['dt']* 1000);
     weather_top[i].innerHTML = day_of_week[current_day.getDay()];
-    weather_bottom[i].innerHTML = `${api_image(forcasts[i])} ${forcasts[i]['main']['temp']}°F`;
+    weather_bottom[i].innerHTML = `${api_image(forcasts[i])} ${forcasts[i]['main']['temp']}°F <span>${forcasts[i]['weather'][0]['description']}</span>`;
   }
 }
 
