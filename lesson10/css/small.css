@@ -276,8 +276,9 @@ span.weather-top {
 }
 
 span.weather-bottom {
-  background-color:white;
+  background-color: white;
   text-align: center;
+  padding-bottom: 1rem;
 }
 
 span.weather-bottom img {
