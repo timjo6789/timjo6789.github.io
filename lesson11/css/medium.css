@@ -155,12 +155,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     border: 1px solid black;
-    border-bottom: none;
-    background-color:black;
+    background-color: white;
     column-gap: 1px;
     row-gap: 1px;
     margin-left: 0px;
     margin-bottom: 1rem;
+    padding-bottom: 1rem;
   }
 
 
