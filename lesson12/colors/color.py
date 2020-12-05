@@ -22,8 +22,10 @@ def load_compare(file_path='color.txt', open_link=False):
     colors = {}
 
     file = open(file_path).readlines()
+    coolors = "https://coolors.co/"
     for each in file:
         each = each.strip('\n')
+        coolors += each[1:] + '-'
         for other in file:
             other = other.strip('\n')
             # sample link "https://contrast-ratio.com/#%23eeeeff-on-%23ffffeee"
@@ -33,6 +35,15 @@ def load_compare(file_path='color.txt', open_link=False):
             colors[link]['pair'] = (each, other)
             colors[link]['rating'] = float(rating(each, other))
 
+    coolors = coolors[:-1]
+    print('colors')
+    print(''.join(file))
+    print()
+    print('coolor template')
+    print(coolors)
+    print()
+
+    print('contrast rating information')
     next = -1
     for each in sorted(colors.items(),key=lambda x:getitem(x[1],'rating'), reverse=True):
         if next != each[1]['rating']:

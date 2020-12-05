@@ -4,6 +4,9 @@
 #F5E925
 #00B2F5
 
+pallete
+https://coolors.co/6318f5-f59125-0d3bf5-f5e925-183642
+
 test on black, white combiniation
 
 #FFFFFF
