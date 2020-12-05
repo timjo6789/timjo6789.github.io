@@ -1,6 +1,5 @@
 #!/bin/python3.8
 
-from bs4 import BeautifulSoup
 from operator import getitem
 from PIL import ImageColor
 
