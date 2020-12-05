@@ -1,0 +1,10 @@
+#6318F5
+#F59125
+#0D3BF5
+#F5E925
+#00B2F5
+
+test on black, white combiniation
+
+#FFFFFF
+#000000
