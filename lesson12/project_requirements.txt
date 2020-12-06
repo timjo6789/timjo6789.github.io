@@ -1,0 +1,30 @@
+HTML - Develop web pages that are semantic and valid using contemporary Hypertext Markup Language
+  All pages use validated markup and appropriate semantic elements. Heading element is used in the proper order, levels, and elements on all pages. The structure used in this project is not an exact or near exact replication of the weather site structure.
+
+CSS - Style web pages using valid, contemporary Cascading Style Sheets (CSS) and avoid all HTML presentation markup
+  All pages are CSS valid. Media queries are used to ensure proper presentation in all views. The site uses normalization or equivalent. The CSS is not repeated unnecessarily between views or left unused. CSS selectors are consistent.
+  The layout design of the project should not be an exact nor near exact replication of the weather site project.
+
+UX (User Experience) - Provide content that is visually appropriate, usable, and findable to humans and machines.
+  The visual appearance of all pages in the site must be responsive, uniform, and consistent at three view levels.
+  This includes using a Google Font reference or equivalent resource.
+  The website follows PARC and typography design principles.
+  The pages have reasonable page weights and images, including the custom logo, and other graphical and functional elements are the appropriate type and size and enhance the UX.
+  The registration form is complete, validates input, and utilizes the CSS Flex display property for layout.
+  All pages are given appropriate titles that not only reflect the website but also the content of the page through keywords.
+
+Plan, design, and develop web pages and sites according to best practices of organization and maintainability.
+  All folders and files follow web naming rules and are friendly/semantic.
+  No unnecessary files or references or libraries are included in the project.
+
+JavaScript  - Work with JavaScript to manipulate the DOM, handle user-agent events, work with external APIs and JSON data.
+  A third party API is used to gather and display current weather information on the home page.
+  All JavaScript used on the site runs without error and debugging content is not displayed to the console.
+  A valid JSON data file is created and to populate the rental information.
+  The last modified date of the page is shown in the footer for each page of the site.
+
+Professionalism - Work effectively, meeting the deadline, participate in the site plan peer reviews and facilitate a positive experience regardless of any self-perceived shortcomings.
+  Participation and communication in the site plan peer reviews was relevant and meaningful.
+  The site is complete containing all of the functional specifications including all required content pages without spelling and grammatical errors.
+  The project was completed on time and audited. The instructor may elect to hold an interview that will be used in consideration of your final project assessment.
+
