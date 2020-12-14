@@ -1,0 +1,148 @@
+Site Purpose
+
+ Caters to locals, walk-in-tourists, enthusiasts, and cruise-based touring groups and partnerships
+ 2 location by cruise drop off/pick up locations
+  PLaya del Carmen-Cozumel Ferry dock in el Centro de Cozumel
+  Terminal Puerta Maya
+ promote friendly and easy to rent services of motor scooters, jeeps, and side-by-sides ATVs
+ overall goal
+  promote rental services for those customers that like to do their homework before getting to the island
+  provide information about the services, requirements, and rental process
+ reflect
+  fun and carefree attitude of the island
+  ability to escape the touristy western part of the island by exploring the vast coasts and inlets on the southern and eastern shores
+
+Site map
+
+ Introduction (index) home page
+ | - Rentals
+ | - Reservations
+ | - Tours
+ | - Contact
+ | - Attributions
+   | - resource reference page 
+
+Color Scheme
+  #6318F5
+  #F59125
+  #0D3BF5
+  #F5E925
+  #00B2F5
+
+  pallete
+    https://coolors.co/6318f5-f59125-0d3bf5-f5e925-183642
+
+  test on black, white combiniation
+    #FFFFFF
+    #000000
+
+Typography
+  Fonts: Alegreya, Varela
+   Alegreya
+    Site Header - Alegreya
+    Primary Navigation - Alegreya
+    Heading 1 - Alegreya
+    Heading 2 - Alegreya
+    Heading 3 - Alegreya
+   Varela
+    Footer Navigation - Varela
+    Paragraph - Varela
+
+Wireframe Sketches
+ widths - 0-480 px for small, 481-960 px for medium, 961+ px for large
+
+Target Audience
+
+ Kayden Bates
+  photo: kayden_bates.jpg
+   reference: https://unsplash.com/photos/y9L5-wmifaY
+  Demographics
+   Single
+   45 years old
+   American
+  Goals and tasks
+   CIO of a IT "Move It" company
+   Works all the time
+
+ Isabel Allen
+  photo: isabel_allen.jpg
+   reference: https://unsplash.com/photos/SJvDxw0azqw
+  Demographics
+   Single
+   40 years old
+   American
+  Goals and tasks
+   CEO of a small business
+   enthusiastic to have out of America experience
+
+ Scott Evans & Addisyn Evans
+  photo: scott_evens_and_addisyn_evans.jpg
+   reference: https://unsplash.com/photos/hvr_p9hcE5s
+  Demographics
+   age: 30 & 32
+   parents of 3 children
+   Americans
+  Goals and tasks
+   live better life
+   likes movies and outdoors
+
+ Adam Davidson & Hannah Parker Davidson
+  photo: adam_davidson_and_hannah_park_davidson.jpg
+   reference: https://unsplash.com/photos/qr7rfIthbvc
+  Demographics
+   age: 70 & 75
+   Grandparents of 7 children and 42 grandchildren
+   Americans
+  Goals and tasks
+   Loves watching sunsets
+   Takes excellent care of their house
+   Loves visiting their children and grandchildren
+   Plans to see the world
+
+Additional information
+
+  Honda Motor Scooters
+    Honda Metropolitan (49cc) - 1 person
+    Honda Dio (110cc) - 2 person
+    Honda PCX150 (149cc) - 2 person
+  ATV Side-by-Side
+    Honda Pioneer 1000
+  Jeep Rentals
+    4-door Jeep Wrangler - manual with A/C - 5 people max
+    2-door Jeep Wrangler - open air - manual - 4 people max
+
+  $50 security deposit is required to confirm reservations
+  A valid drivers license is required in hand at time of rental
+  12+ only for riding on the scooters
+  Fuel charge not included
+  Unlimited mileage
+  Liability insurance is free of charge
+  reservations rate requires 24 hours prior notification
+  free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals
+  payments via google pay, cash, credit, debit card, or PayPal
+  Rentals may be returned to either location
+
+  Max Persons and Price Chart (includes Tax)
+							Reservation		Reservation	Walk-In			Walk-In
+   Rental Type				Max. Persons	Half Day (3 hours)	Full Day	Half Day (3 hours)	Full Day
+   Honda Metro Scooter			1		$20			$30		$25			$35
+   Honda Dio Scooter			2		$30			$40		$35			$45
+   Honda PCX150 Scooter			2		$40			$50		$45			$55
+   Honda Pioneer ATV			4		$50			$70		$60			$80
+   Jeep Wrangler - 4 door with a/c	5		$70			$100		$85			$125
+   Jeep Wrangler - 2 door		4		$60			$85		$70			$90
+
+
+Attractions with scoots
+
+ good location to find good pictures and details for renting https://www.cozumel-tours.com/
+
+ potential locations from renting
+  Palancar Reef
+  the National Marine Park
+  San Gervasio
+  Punta Sur Eco Beach Park
+  Cozumel's Lighthouse
+  Museum of the Island of Cozumel
+
+

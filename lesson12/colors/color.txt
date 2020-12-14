@@ -1,7 +1,7 @@
-#6318F5
-#F59125
-#0D3BF5
-#F5E925
-#00B2F5
-#FFFFFF
+#F6Bd60
+#f7ede2
+#f5cac3
+#84a59d
+#f28482
+#ffffff
 #000000
