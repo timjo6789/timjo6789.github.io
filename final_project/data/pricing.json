@@ -1,0 +1,68 @@
+{
+  "Honda Metro Scooter": {
+    "Max persons": 1,
+    "Half_day":{
+      "Reservation": 20,
+      "Walk_in": 25
+    },
+    "Full_day":{
+      "Reservation": 30,
+      "Walk_in": 35
+    }
+  },
+  "Honda Dio Scooter": {
+    "Max persons": 2,
+    "Half_day":{
+      "Reservation": 30,
+      "Walk_in": 35
+    },
+    "Full_day":{
+      "Reservation": 40,
+      "Walk_in": 45
+    }
+  },
+  "Honda PCX150 Scooter": {
+    "Max persons": 2,
+    "Half_day":{
+      "Reservation": 40,
+      "Walk_in": 45
+    },
+    "Full_day":{
+      "Reservation": 50,
+      "Walk_in": 55
+    }
+  },
+  "Honda Pioneer ATV": {
+    "Max persons": 4,
+    "Half_day":{
+      "Reservation": 50,
+      "Walk_in": 60
+    },
+    "Full_day":{
+      "Reservation": 70,
+      "Walk_in": 80
+    }
+  },
+  "Jeep Wrangler 4 door with a/c": {
+    "Max persons": 5,
+    "Half_day":{
+      "Reservation": 70,
+      "Walk_in": 85
+    },
+    "Full_day":{
+      "Reservation": 100,
+      "Walk_in": 125
+    }
+  },
+  "Jeep Wrangler 2 door": {
+    "Max persons": 4,
+    "Half_day":{
+      "Reservation": 60,
+      "Walk_in": 70
+    },
+    "Full_day":{
+      "Reservation": 85,
+      "Walk_in": 90
+    }
+  }
+}
