@@ -1,6 +1,0 @@
-Pillow==7.1.2
-request==2019.4.13
-requests==2.23.0
-urllib3==1.25.8
-wcag-contrast-ratio==0.9
-wcwidth==0.2.5

@@ -1,9 +1,0 @@
-Run this in any browser for color.adobe.com to extract hex colors for color.txt
-
-function colors(){
-  color = "";
-  for (let each of document.querySelectorAll('.spectrum-Textfield.spectrum-Textfield--quiet.HexInputField__hexInputField___30Xc9')) {
-    color += each.value + '\n';
-  };
-  console.log(color);
-}
