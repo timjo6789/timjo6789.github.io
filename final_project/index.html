@@ -2,7 +2,10 @@
 <html lang="en-US">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+    <meta name="viewport" content="width=450" />
+    -->
     <title>Techy Progression's Weather Page</title>
     <meta
       name="description"
@@ -24,12 +27,12 @@
       // configure api to use Cozumel in weatherapi.js
       const TOWN_NAME = "cozumel";
     </script>
-    <script defer src="javascript/dynamically_show_text.js"></script>
-    <script defer src="javascript/weatherapi.js"></script>
     <script defer src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script defer src="javascript/load_fonts.js"></script>
+    <script defer src="javascript/dynamically_show_text.js"></script>
+    <!-- <script defer src="javascript/weatherapi.js"></script> -->
+    <script async src="javascript/menu_responsive.js"></script>
     <!--
-    <script defer src="javascript/menu_responsive.js"></script>
     <script defer src="javascript/footer_time.js"></script>
     <script defer src="javascript/index_cards.js"></script>
     -->
@@ -38,13 +41,10 @@
     <header>
       <div class='header_top'>
         <img class='logo' src="images/logo.png" alt='~Scoots logo'>
-        <div>
-          <h1>~Scoots</h1>
-          <p>motto</p>
-        </div>
-        <button onclick="toggleMenu()">&#9776;</button>
+        <h1>~Scoots</h1>
+        <button id='nav-button'>&#9776;</button>
       </div>
-      <nav class='clearfix'>
+      <nav class='clearfix hidden'>
         <ul id='navigation' class='hide responsive'>
           <li class='active'><a href="index.html">Home</a></li>
           <li><a href="rentals.html">Rentals</a></li>
@@ -62,6 +62,44 @@
       </fieldset>
       <fieldset class='weather'>
         <legend>Weather</legend>
+        <div class="weather-grid">
+          <div class="weather-card today">
+            <img src="https://api.openweathermap.org/img/w/04d.png" alt="broken clouds">
+            <div class="weather-details">
+              <span class="day">Today</span>
+              <span>broken clouds</span>
+              <span>Temperature: 82.4°F</span>
+              <span>Humidity: 69</span>
+            </div>
+          </div>
+          <div class="weather-card forecast">
+            <img src="https://api.openweathermap.org/img/w/01d.png" alt="clear sky">
+            <div class="weather-details">
+              <span class="day">Wednesday</span>
+              <span>clear sky</span>
+              <span>Temperature: 81.84°F</span>
+              <span>Humidity: 67</span>
+            </div>
+          </div>
+          <div class="weather-card forecast">
+            <img src="https://api.openweathermap.org/img/w/10d.png" alt="light rain">
+            <div class="weather-details">
+              <span class="day">Thursday</span>
+              <span>light rain</span>
+              <span>Temperature: 78.57°F</span>
+              <span>Humidity: 79</span>
+            </div>
+          </div>
+          <div class="weather-card forecast">
+            <img src="https://api.openweathermap.org/img/w/10d.png" alt="moderate rain">
+            <div class="weather-details">
+              <span class="day">Friday</span>
+              <span>moderate rain</span>
+              <span>Temperature: 76.17°F</span>
+              <span>Humidity: 86</span>
+            </div>
+          </div>
+        </div>
       </fieldset>
       <fieldset class='rentals'>
         <legend>Rentals</legend>
@@ -128,11 +166,35 @@
       </fieldset>
     </main>
     <footer>
-      <a href="attribution.html">Attribution</a> - San Miguel de Cozumel, MX - &copy;2020 All rights reserved.
-      <img src="images/social/facebook64x64.png" alt="Facebook Icon">
-      <img src="images/social/instagram64x64.png" alt="Instagram Icon">
-      <img src="images/social/twitter64x64.png" alt="Twitter Icon">
-      <img src="images/social/youtube64x64.png" alt="YouTube Icon">
+      <div class='icons'>
+        <a href="https://facebook.com">
+          <picture>
+            <source srcset="images/social/facebook64x64.png" media="(min-width: 500px)">
+            <img src="images/social/facebook32x32.png" alt="Facebook Icon">
+          </picture>
+        </a>
+        <a href="https://instagram.com">
+          <picture>
+            <source srcset="images/social/instagram64x64.png" media="(min-width: 500px)">
+            <img class="correct-background" src="images/social/instagram32x32.png" alt="Instagram Icon">
+          </picture>
+        </a>
+        <a href="https://twitter.com">
+          <picture>
+            <source srcset="images/social/twitter64x64.png" media="(min-width: 500px)">
+            <img src="images/social/twitter32x32.png" alt="Twitter Icon">
+          </picture>
+        </a>
+        <a href="https://youtube.com">
+          <picture>
+            <source srcset="images/social/youtube64x64.png" media="(min-width: 500px)">
+            <img src="images/social/youtube32x32.png" alt="YouTube Icon">
+          </picture>
+        </a>
+      </div>
+      <div class="copyright">
+        <a href="attribution.html">Attribution</a> <span class='dash'>-</span> <span class="other">San Miguel de Cozumel, MX</span><span class='dash'>-</span><span class="other">&copy;2020 All rights reserved.</span>
+      </div>
     </footer>
   </body>
 </html>

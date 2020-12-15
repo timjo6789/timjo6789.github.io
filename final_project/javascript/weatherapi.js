@@ -5,33 +5,38 @@ setText = (querySelector, text) => document.querySelector(querySelector).textCon
 day_of_week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 function weather(json_data){
-  let weather_section = document.querySelector('.weather');
-  let current_day = new Date();
+  let weather_section = document.querySelector('.weather-grid');
   weather_section.innerHTML += 
-    `<div class="weather-card">
-    ${api_image(json_data)}
-    <span>${day_of_week[current_day.getDay()]}</span>
-    <span>${json_data['weather'][0]['description']}</span>
-    <span>Temperature: ${json_data['main']['temp']}°F</span>
-    <span>Humidity: ${json_data['main']['humidity']}</span>
-    </div>`;
+    `<div class="weather-card today">
+      ${api_image(json_data)}
+      <div class="weather-details">
+        <span class="day">Today</span>
+        <span>${json_data['weather'][0]['description']}</span>
+        <span>Temperature: ${json_data['main']['temp']}°F</span>
+        <span>Humidity: ${json_data['main']['humidity']}</span>
+      </div>
+    </div>
+    `;
 }
 
 function forecast(json_data) {
-  let weather_section = document.querySelector('.weather');
+  let weather_section = document.querySelector('.weather-grid');
   let forcasts = json_data['list'].filter(each => each['dt_txt'].split(' ')[1] == '18:00:00');
   let current_day = new Date();
 
   for (let i = 0; i < 3; i++) {
     current_day.setTime(forcasts[i]['dt'] * 1000);
     weather_section.innerHTML += 
-      `<div class="weather-card">
-      ${api_image(forcasts[i])}
-      <span>${day_of_week[current_day.getDay()]}</span>
-      <span>${forcasts[i]['weather'][0]['description']}</span>
-      <span>Temperature: ${forcasts[i]['main']['temp']}°F</span>
-      <span>Humidity: ${forcasts[i]['main']['humidity']}</span>
-      </div>`;
+      `<div class="weather-card forecast">
+        ${api_image(forcasts[i])}
+        <div class="weather-details">
+          <span class="day">${day_of_week[current_day.getDay()]}</span>
+          <span>${forcasts[i]['weather'][0]['description']}</span>
+          <span>Temperature: ${forcasts[i]['main']['temp']}°F</span>
+          <span>Humidity: ${forcasts[i]['main']['humidity']}</span>
+        </div>
+      </div>
+      `;
   }
 }
 
