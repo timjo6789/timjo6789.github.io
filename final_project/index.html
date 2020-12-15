@@ -13,20 +13,126 @@
     <link rel="preload" href="css/small.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/medium.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/large.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="css/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     <noscript>
       <link rel="stylesheet" href="css/small.css">
       <link rel="stylesheet" href="css/medium.css">
       <link rel="stylesheet" href="css/large.css">
-      <link rel="stylesheet" href="css/footer.css">
     </noscript>
 
-    
+    <script>
+      // configure api to use Cozumel in weatherapi.js
+      const TOWN_NAME = "cozumel";
+    </script>
+    <script defer src="javascript/dynamically_show_text.js"></script>
+    <script defer src="javascript/weatherapi.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script defer src="javascript/load_fonts.js"></script>
+    <!--
     <script defer src="javascript/menu_responsive.js"></script>
     <script defer src="javascript/footer_time.js"></script>
     <script defer src="javascript/index_cards.js"></script>
-    <script defer src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script defer src="javascript/load_fonts.js"></script>
-
+    -->
   </head>
+  <body>
+    <header>
+      <div class='header_top'>
+        <img class='logo' src="images/logo.png" alt='~Scoots logo'>
+        <div>
+          <h1>~Scoots</h1>
+          <p>motto</p>
+        </div>
+        <button onclick="toggleMenu()">&#9776;</button>
+      </div>
+      <nav class='clearfix'>
+        <ul id='navigation' class='hide responsive'>
+          <li class='active'><a href="index.html">Home</a></li>
+          <li><a href="rentals.html">Rentals</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="tours.html">Tours!</a></li>
+          <li><a href="contact.html">Contact us!</a></li>
+          <li><a href="attribution.html">Attribution</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <fieldset class="alerts">
+        <legend>Weather Alerts</legend>
+        <p class="alerts">...HEAT ADVISORY REMAINS IN EFFECT FROM 1 PM THIS AFTERNOON TO\n8 PM CDT THIS EVENING...\n* WHAT...Heat index values of 105 to 109 degrees expected.\n* WHERE...Creek, Okfuskee, Okmulgee, McIntosh, Pittsburg,\nLatimer, Pushmataha, and Choctaw Counties.\n* WHEN...From 1 PM to 8 PM CDT Thursday.\n* IMPACTS...The combination of hot temperatures and high\nhumidity will combine to create a dangerous situation in which\nheat illnesses are possible.</p>
+      </fieldset>
+      <fieldset class='weather'>
+        <legend>Weather</legend>
+      </fieldset>
+      <fieldset class='rentals'>
+        <legend>Rentals</legend>
+        <div class="rental-card">
+          <span class='rental-text'>
+            <span>
+              <span class='small-detail'>Going solo? Take this sweet ride!</span>
+              <span class='median-large-detail'>Going solo? Try Honda Metropolitan Scooter!</span>  
+            </span>
+            <a href="">Reserve it!</a>
+          </span>
+        <img src="images/vehicles/honda_metropolitan650x380.jpg" alt="">
+        </div>
+        <div class="rental-card">
+          <span class='rental-text'>
+            <span>
+              <span class='small-detail'>Have someone with you? Take this double sweet ride!</span>
+              <span class='median-large-detail'>Have someone with you? Try Honda Duo Scooter!</span>  
+            </span>
+            <a href="">Reserve it!</a>
+          </span>
+          <img src="images/vehicles/honda-dio_600x400.jpg" alt="">
+        </div>
+        <div class="rental-card">
+          <span class='rental-text'>
+            <span>
+              <span class='small-detail'>Feeling fancy? Going solo? Take this sweeter ride!</span>
+              <span class='median-large-detail'>Feeling fancy? Going solo? Try Honda PCX150 Scooter!</span>  
+            </span>
+            <a href="">Reserve it!</a>
+          </span>
+          <img src="images/vehicles/honda_pcx150_scooter_650x380.jpg" alt="">
+        </div>
+        <div class="rental-card">
+          <span class='rental-text'>
+            <span>
+              <span class='small-detail'>Feeling adventerous? Take this ATV style ride!</span>
+              <span class='median-large-detail'>Feeling adventerous? Try Honda Pioneer ATV!</span>  
+            </span>
+            <a href="">Reserve it!</a>
+          </span>
+          <img src="images/vehicles/2021-pioneer-1000-red-650x380.jpg" alt="">
+        </div>
+        <div class="rental-card">
+          <span class='rental-text'>
+            <span>
+              <span class='small-detail'>Feeling adventerous? Have a squad? Take this jeep for a drive!</span>
+              <span class='median-large-detail'>Feeling adventerous? Have a squad? Try Jeep with 4 doors and air conditioner for a drive!</span>  
+            </span>
+            <a href="">Reserve it!</a>
+          </span>
+          <img src="images/vehicles/jeep_4_doors.jpg" alt="">
+        </div>
+        <div class="rental-card">
+          <span class='rental-text'>
+            <span>
+              <span class='small-detail'>Feeling adventerous? Just a duo? Take this duo jeep for a drive!</span>
+              <span class='median-large-detail'>Feeling adventerous? Just a duo? Try Jeep with 2 doors for a drive!</span>  
+            </span>
+            <a href="">Reserve it!</a>
+          </span>
+          <img src="images/vehicles/jeep_2_doors.jpg" alt="">
+        </div>
+      </fieldset>
+    </main>
+    <footer>
+      <a href="attribution.html">Attribution</a> - San Miguel de Cozumel, MX - &copy;2020 All rights reserved.
+      <img src="images/social/facebook64x64.png" alt="Facebook Icon">
+      <img src="images/social/instagram64x64.png" alt="Instagram Icon">
+      <img src="images/social/twitter64x64.png" alt="Twitter Icon">
+      <img src="images/social/youtube64x64.png" alt="YouTube Icon">
+    </footer>
+  </body>
+</html>

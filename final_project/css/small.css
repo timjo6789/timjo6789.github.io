@@ -1,0 +1,69 @@
+/*****************
+ * set up colors *
+ *****************/
+
+:root {
+ --purple: #6318f5;
+ --orange: #f59125;
+ --blue: #0d3bf5;
+ --yellow: #f5e925;
+ --dark-blue: #183642;
+}
+
+/****************
+ * set up fonts *
+ ****************/
+
+body {
+  font-size: 18px;
+  background-color: var(--orange);
+  font-family: Alegreya, sans-serif;
+}
+
+p,
+span,
+footer {
+  font-family: Varela, sans-serif;
+}
+
+/*************
+ * other css *
+ *************/
+
+.hidden {
+  display: hidden;
+}
+
+a {
+  font-family: Varela, sans-serif;
+}
+
+fieldset {
+  border: none;
+  color: black;
+  background-color: var(--yellow);
+}
+legend {
+  text-align: center;
+}
+
+div.rental-card {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+div.rental-card span.rental-text {
+  border: 0.5rem solid black;
+}
+
+div.rental-card span.rental-text a {
+  display:block;
+  text-align:right;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+div.rental-card img {
+  width: 100%;
+}
