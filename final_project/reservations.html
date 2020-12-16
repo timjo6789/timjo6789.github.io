@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+    <meta name="viewport" content="width=450" />
+    -->
+    <title>Techy Progression's Weather Page</title>
+    <meta
+      name="description"
+      content="A home page of ~Scoots website. - WDD 230 - Web Frontend Development at BYUI - Idaho"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="preload" href="css/small.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/medium.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/large.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <noscript>
+      <link rel="stylesheet" href="css/small.css">
+      <link rel="stylesheet" href="css/medium.css">
+      <link rel="stylesheet" href="css/large.css">
+    </noscript>
+
+    <script>
+      // configure api to use Cozumel in weatherapi.js
+      const TOWN_NAME = "cozumel";
+    </script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script defer src="javascript/load_fonts.js"></script>
+    <script defer src="javascript/dynamically_show_text.js"></script>
+    <script defer src="javascript/api.js"></script>
+    <script defer src="javascript/weatherapi.js"></script>
+    <script defer src="javascript/weather_alerts.js"></script>
+    <script async src="javascript/menu_responsive.js"></script>
+    <!--
+    <script defer src="javascript/footer_time.js"></script>
+    <script defer src="javascript/index_cards.js"></script>
+    -->
+  </head>
+  <body>
+    <header>
+      <div class='header_top'>
+        <img class='logo' src="images/logo.png" alt='~Scoots logo'>
+        <h1>~Scoots</h1>
+        <button id='nav-button'>&#9776;</button>
+      </div>
+      <nav class='clearfix hidden'>
+        <ul id='navigation' class='hide responsive'>
+          <li class='active'><a href="index.html">Home</a></li>
+          <li><a href="rentals.html">Rentals</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="tours.html">Tours!</a></li>
+          <li><a href="contact.html">Contact us!</a></li>
+          <li><a href="attribution.html">Attribution</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class='side-by-side'>
+        <fieldset class="alerts">
+          <legend>No Weather Alerts</legend>
+        </fieldset>
+        <fieldset class='weather'>
+          <legend>Weather</legend>
+          <div class="weather-grid">
+          </div>
+        </fieldset>
+      </div>
+      <fieldset class='rentals'>
+        <legend>Rentals</legend>
+        <div class='rental-table'>
+          <div class="rental-card">
+            <span class='rental-text'>
+              <span>
+                <span class='small-detail'>Going solo? Take this sweet ride!</span>
+                <span class='median-large-detail'>Going solo? Try Honda Metropolitan Scooter! It can take you far, far away!</span>  
+              </span>
+              <a href=""><span class='small-medium-detail'>Reserve it!</span><span class='large-detail'>Reserve ~Honda Metro Scooter Now!</span></a>
+            </span>
+          <img src="images/vehicles/honda_metropolitan650x380.jpg" alt="">
+          </div>
+          <div class="rental-card">
+            <span class='rental-text'>
+              <span>
+                <span class='small-detail'>Have someone with you? Take this double sweet ride!</span>
+                <span  class='median-large-detail'>Have someone with you? Try Honda Duo Scooter! Take someone with you and enjoy the breeze!</span>  
+              </span>
+              <a href=""><span class='small-medium-detail'>Reserve it!</span><span class='large-detail'>Reserve ~Honda Duo Scooter Now!</span></a>
+            </span>
+            <img src="images/vehicles/honda-dio_600x400.jpg" alt="">
+          </div>
+          <div class="rental-card">
+            <span class='rental-text'>
+              <span>
+                <span class='small-detail'>Feeling fancy? Going duo? Take this sweeter ride!</span>
+                <span class='median-large-detail'>Feeling fancy? Going duo? Try Honda PCX150 Scooter! Fastest scooter ever owned!</span>  
+              </span>
+              <a href=""><span class='small-medium-detail'>Reserve it!</span><span class='large-detail'>Reserve ~Honda PCX150 Scooter now!</span></a>
+            </span>
+            <img src="images/vehicles/honda_pcx150_scooter_650x380.jpg" alt="">
+          </div>
+          <div class="rental-card">
+            <span class='rental-text'>
+              <span>
+                <span class='small-detail'>Feeling adventerous? Take this ATV style ride!</span>
+                <span class='median-large-detail'>Feeling adventerous? Try Honda Pioneer ATV! It'll take you to places like never before!</span>  
+              </span>
+              <a href=""><span class='small-medium-detail'>Reserve it!</span><span class='large-detail'>Reserve Honda Pioneer ATV Now!</span></a>
+            </span>
+            <img src="images/vehicles/2021-pioneer-1000-red-650x380.jpg" alt="">
+          </div>
+          <div class="rental-card">
+            <span class='rental-text'>
+              <span>
+                <span class='small-detail'>Feeling adventerous? Have a squad? Take this jeep for a drive!</span>
+                <span class='median-large-detail'>Feeling adventerous? Have a squad? Try Jeep with 4 doors and air conditioner for a drive! You'll get cooled off!</span>  
+              </span>
+              <a href=""><span class='small-medium-detail'>Reserve it!</span><span class='large-detail'>Reserve Jeep with 4 Doors and Air Conditioner Now!</span></a>
+            </span>
+            <img src="images/vehicles/jeep_4_doors.jpg" alt="">
+          </div>
+          <div class="rental-card">
+            <span class='rental-text'>
+              <span>
+                <span class='small-detail'>Feeling adventerous? Just a duo? Take this duo jeep for a drive!</span>
+                <span class='median-large-detail'>Feeling adventerous? Just a duo? Try Jeep with 2 doors for a drive! You'll be protected from any rain!</span>  
+              </span>
+              <a href=""><span class='small-medium-detail'>Reserve it!</span><span class='large-detail'>Reserve Jeep with 2 Doors Now!</span></a>
+            </span>
+            <img src="images/vehicles/jeep_2_doors.jpg" alt="">
+          </div>
+        </div>
+      </fieldset>
+    </main>
+    <footer>
+      <div class='icons'>
+        <a href="https://facebook.com">
+          <picture>
+            <source srcset="images/social/facebook64x64.png" media="(min-width: 500px)">
+            <img src="images/social/facebook32x32.png" alt="Facebook Icon">
+          </picture>
+        </a>
+        <a href="https://instagram.com">
+          <picture>
+            <source srcset="images/social/instagram64x64.png" media="(min-width: 500px)">
+            <img class="correct-background" src="images/social/instagram32x32.png" alt="Instagram Icon">
+          </picture>
+        </a>
+        <a href="https://twitter.com">
+          <picture>
+            <source srcset="images/social/twitter64x64.png" media="(min-width: 500px)">
+            <img src="images/social/twitter32x32.png" alt="Twitter Icon">
+          </picture>
+        </a>
+        <a href="https://youtube.com">
+          <picture>
+            <source srcset="images/social/youtube64x64.png" media="(min-width: 500px)">
+            <img src="images/social/youtube32x32.png" alt="YouTube Icon">
+          </picture>
+        </a>
+      </div>
+      <div class="copyright">
+        <a href="attribution.html">Attribution</a> <span class='dash'>-</span> <span class="other">San Miguel de Cozumel, MX</span><span class='dash'>-</span><span class="other">&copy;2020 All rights reserved.</span>
+      </div>
+    </footer>
+  </body>
+</html>
