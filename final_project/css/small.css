@@ -209,6 +209,28 @@ div.weather-grid div.weather-card div.weather-details span {
   font-family: Varela, sans-serif;
 }
 
+/*********************
+ * index.html Images *
+ *********************/
+
+fieldset.images {
+  width: 85%;
+}
+
+fieldset.images div.images-grid {
+  display: grid;
+
+  row-gap: 1rem;
+}
+
+fieldset.images legend {
+  font-size: 2rem;
+}
+
+fieldset.images img {
+  width: 100%;
+  border-radius: 2rem;
+}
 
 /****************
  * Rental cards *
@@ -261,6 +283,132 @@ div.rental-card span.rental-text a {
   font-size: 2.44rem;
   text-decoration: none;
   text-align: center;
+}
+
+/************************
+ * For contact.html *
+ ************************/
+
+fieldset.contact-info {
+  text-align: center;
+  font-family: Valera, sans-serif;
+}
+
+fieldset.contact-info form input {
+  margin: 0 auto;
+}
+
+iframe:nth-last-of-type(1) {
+  margin-bottom: 1rem;
+}
+
+fieldset.contact-info form input[type="submit"] {
+  margin-top: 1rem;
+}
+
+/********************
+ * For rentals.html *
+ ********************/
+
+
+div#scroll {
+  margin: 0 auto;
+  margin-top: 1rem;
+
+  width: 85%;
+  overflow-x:auto;
+
+  background-color: var(--yellow);
+}
+
+table {
+  white-space: nowrap;
+  text-align: center;
+  width:100%;
+  border-collapse: collapse;
+}
+
+tr,
+th,
+td {
+  border: 1px solid black;
+}
+
+/************************
+ * For confirmation.html *
+ ************************/
+
+fieldset p.thanks {
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  width: 50%; /* calc(max-content + 1rem); */
+  text-align: center;
+
+  background-color: green;
+  color: white;
+
+  font-family: Valera, sans-serif;
+ }
+
+
+/************************
+ * For reservation.html *
+ ************************/
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+
+form label {
+  padding-top: 3%;
+}
+
+form input {
+  max-width: 10rem;
+  height: 44px;
+}
+
+form input:valid:not(input[type="submit"]) {
+  border: 3px solid green;
+  border-radius: 1rem;
+}
+
+form input:optional:not(input[type="submit"]) {
+  border: 3px solid gray;
+  border-radius: 1rem;
+}
+
+form input:invalid {
+  border: 3px solid red;
+  border-radius: 1rem;
+}
+
+form select {
+  max-width: 10.5rem;
+  height: 44px;
+}
+
+form p {
+  margin-bottom: -1rem;
+}
+
+form input[type="submit"] {
+  align-self: center;
+
+  margin-top: 1rem;
+  
+  color: black;
+  background-color: var(--light-blue);
+}
+
+form textarea {
+  max-width: 100%;
 }
 
 /**********

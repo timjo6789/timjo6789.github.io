@@ -1,9 +1,7 @@
-setText = (querySelector, text) => document.querySelector(querySelector).textContent = text;
-
 day_of_week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 function weather(json_data){
-  let weather_section = document.querySelector('.weather-grid');
+  let weather_section = select('.weather-grid');
   weather_section.innerHTML += 
     `<div class="weather-card today">
       ${api_image(json_data)}
@@ -19,7 +17,7 @@ function weather(json_data){
 }
 
 function forecast(json_data) {
-  let weather_section = document.querySelector('.weather-grid');
+  let weather_section = select('.weather-grid');
   let forcasts = json_data['list'].filter(each => each['dt_txt'].split(' ')[1] == '18:00:00');
   let current_day = new Date();
 

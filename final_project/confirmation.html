@@ -23,14 +23,21 @@
       <link rel="stylesheet" href="css/large.css">
     </noscript>
 
+    <script>
+      // configure api to use Cozumel in weatherapi.js
+      const TOWN_NAME = "cozumel";
+    </script>
     <script defer src="javascript/helper.js"></script>
     <script defer src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script defer src="javascript/load_fonts.js"></script>
-    <script defer src="javascript/api.js"></script>
-    <script async src="javascript/menu_responsive.js"></script>
     <script defer src="javascript/dynamically_show_text.js"></script>
+    <script defer src="javascript/api.js"></script>
+    <script defer src="javascript/weatherapi.js"></script>
+    <script defer src="javascript/weather_alerts.js"></script>
+    <script async src="javascript/menu_responsive.js"></script>
     <!--
     <script defer src="javascript/footer_time.js"></script>
+    <script defer src="javascript/index_cards.js"></script>
     -->
   </head>
   <body>
@@ -52,51 +59,9 @@
       </nav>
     </header>
     <main>
-      <fieldset class='form'>
-        <legend>Reservation</legend>
-        <form action="confirmation.html" method="GET">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="abc@abc.com" required>
-          <label for="phone">Phone number</label>
-          <input type="tel" name="phone" id="phone" placeholder="(123) 456-7890">
-          <label for="home-place">Home State or Country</label>
-          <input type="text" name="home-place" id="home-place" placeholder="Idaho, USA">
-          <label for="date">Reservation date</label>
-          <input type="date" name="date" id="date" required>
-          <label for="rental-period">Rental Period</label>
-          <select name="rental-period" id="rental-period">
-            <option value="">Half day (3 hours)</option>
-            <option value="">Full day</option>
-          </select>
-          <label for="rental-type">Rental type</label>
-          <select name="rental-type" id="rental-type" required>
-            <option value=""></option>
-            <option value="honda_metro_scooter">~Honda Metro Scooter</option>
-            <option value="honda_dio_scooter">~Honda Dio Scooter</option>
-            <option value="honda_pcx150_scooter">~Honda PCX150 Scooter</option>
-            <option value="honda_pioneer_atv">Honda Pioneer ATV</option>
-            <option value="jeep_wrangler_4">Jeep Wrangler - 4 door with a/c</option>
-            <option value="jeep_wrangler_2">Jeep Wrangler - 2 door</option>
-          </select>
-          <label for="cruise-line">Cruise line</label>
-          <input type="text" name="cruise-line" id="cruise-line" value="">
-          <label for="additional-information">Additional Information</label>
-          <textarea name="additional-information" id="additional-information" cols="30" rows="10"></textarea>
-          <p>Agreements</p>
-          <ul>
-            <li>$50 security deposit is required to confirm reservations</li>
-            <li>valid drivers license is required in hand at time of rental</li>
-            <li>No one under 12 years of age are allowed to ride on the scooters</li>
-            <li>Fuel charge not included.</li>
-            <li>Unlimited mileage.</li>
-            <li>Liability insurance is free of charge.</li>
-            <li>Reservations rate requires 24 hour prior notification.</li>
-            <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
-            <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
-            <li>Rentals may be returned to either location.</li>
-          </ul>
-          <input type="submit" value="Agree and Reserve!">
-        </form>
+      <fieldset>
+        <legend>Thank you!</legend>
+        <p class='thanks'>Your reservation has been reserved!</p>
       </fieldset>
     </main>
     <footer>

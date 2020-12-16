@@ -20,20 +20,21 @@
    * header_top *
    **************/
 
-  div.header_top h1 {
+  header img.logo {
+    justify-self: center;
+
+    width: 75%;
+  }
+
+  header div.header_top h1 {
     font-size: 7rem;
   }
 
-  div.header_top button {
+  header div.header_top button {
     width: 4.89rem;
     height: 4.89rem;
 
     font-size: 3rem;
-  }
-
-  img.logo {
-    justify-self: center;
-    width: 75%;
   }
 
   /**************
@@ -41,7 +42,7 @@
    **************/
 
    nav ul {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   /***********************************
@@ -53,6 +54,14 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  fieldset.alerts {
+    height: min-content;
+  }
+
+  fieldset.weather {
+    height: min-content;
+  }
+
   /****************
    * Rental cards *
    ****************/
@@ -61,12 +70,12 @@
     width: 92%;
   }
 
-  div.rental-table {
+  fieldset.rentals div.rental-table {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  div.rental-card {
+  div.rental-table div.rental-card {
     grid-template-columns: 15rem 1fr;
   }
 
@@ -84,11 +93,64 @@
     font-size: 1rem;
   }
 
-  div.rental-card img {
+  fieldset.rentals div.rental-card img {
     order: unset;
 
     width: 95%;
   }
+
+  /*********************
+   * index.html Images *
+   *********************/
+ 
+   fieldset.images {
+    width: 92%;
+  }
+  
+  fieldset.images div.images-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+  }
+
+  /********************
+   * For contact.html *
+   ********************/
+
+  iframe:nth-last-of-type(1) {
+    margin-bottom: unset;
+  }
+
+  /********************
+   * For rentals.html *
+   ********************/
+
+
+  div#scroll {
+    width: 75%;
+    overflow-x:unset;
+  }
+
+  table {
+    white-space: unset;
+  }
+
+  /************************
+   * For reservation.html *
+   ************************/
+
+   fieldset.form {
+    max-width: 45rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 44rem;
+    margin: 0 auto;
+  }
+
 
   /**********
    * Footer *

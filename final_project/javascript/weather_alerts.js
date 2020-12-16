@@ -22,12 +22,12 @@ function generate_warning(description) {
 
 function api(json_data){
   if ("alerts" in json_data) {
-    document.querySelector('fieldset.alerts legend').textContent = "Weather Alerts";
+    select('fieldset.alerts legend').textContent = "Weather Alerts";
     layout = "";
     json_data["alerts"].forEach(element => {
       layout += generate_warning(element["description"]);
     });
-    document.querySelector('fieldset.alerts').innerHTML += layout;
+    select('fieldset.alerts').innerHTML += layout;
   }
 }
 
@@ -43,4 +43,5 @@ api(json_data);
 // comment to test weather alerts
 let LAT = '20.422983';
 let LON = '-86.922340';
-bind_fetch(api, `https://api.openweathermap.org/data/2.5/onecall?lat=${LAT}&lon=${LON}&exclude=hourly,daily,minutely,current&appid=${APPID}`);
+// prevent calls for testing (max calls is 1,000)
+// bind_fetch(api, `https://api.openweathermap.org/data/2.5/onecall?lat=${LAT}&lon=${LON}&exclude=hourly,daily,minutely,current&appid=${APPID}`);
