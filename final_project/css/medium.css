@@ -1,0 +1,119 @@
+@media only screen and (min-width: 27.78rem) { /* 500px */
+
+  /*******************
+   * primary section *
+   *******************/
+
+  fieldset {
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+
+  legend {
+    padding-top: unset;
+
+    border: 5px solid var(--yellow);
+    background-color: var(--orange);
+  }
+
+  /**************
+   * header_top *
+   **************/
+
+  div.header_top h1 {
+    font-size: 7rem;
+  }
+
+  div.header_top button {
+    width: 4.89rem;
+    height: 4.89rem;
+
+    font-size: 3rem;
+  }
+
+  img.logo {
+    justify-self: center;
+    width: 75%;
+  }
+
+  /**************
+   * Navigation *
+   **************/
+
+   nav ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /***********************************
+   * Side-by-side weather and alerts *
+   ***********************************/
+  
+  div.side-by-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /****************
+   * Rental cards *
+   ****************/
+
+  fieldset.rentals {
+    width: 92%;
+  }
+
+  div.rental-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  div.rental-card {
+    grid-template-columns: 15rem 1fr;
+  }
+
+  div.rental-card span.rental-text {
+    display: grid;
+    font-size: 1rem;
+  }
+
+  div.rental-card span.rental-text a {
+    padding: 1rem;
+    align-self: center;
+
+    color: #0000EE;
+
+    font-size: 1rem;
+  }
+
+  div.rental-card img {
+    order: unset;
+
+    width: 95%;
+  }
+
+  /**********
+   * Footer *
+   **********/
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 25% 4%;
+  }
+
+  footer div.copyright {
+    order: -1;
+  }
+
+  footer div.copyright a {
+    display: inline;
+    font-size: 1.5rem;
+  }
+
+  footer div.copyright span.other{
+    display: inline;
+  }
+
+  footer div.copyright span.dash {
+    display: inline;
+  }
+
+}

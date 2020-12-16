@@ -126,6 +126,45 @@ legend {
   font-size: 3rem;
   text-align: center;
 }
+
+/******************
+ * Weather alerts *
+ ******************/
+
+fieldset.alerts h2 {
+  margin: 0.5rem;
+  padding: 1rem;
+
+  border: 1px solid black;
+  border-radius: 2.5rem;
+  color: black;
+  background-color: var(--orange);
+
+  font-family: Valera, sans-serif;
+}
+
+fieldset.alerts legend {
+  font-size: 2.5rem;
+}
+
+div.warning-table div.warning-item {
+  display: grid;
+  margin: 0.5rem;
+  padding: 1rem;
+
+  border: 1px solid black;
+  border-radius: 2.5rem;
+  font-size: 1.25rem;
+  color: black;
+  background-color: var(--light-blue);
+
+  text-align: center;
+}
+
+div.warning-table div.warning-item span:nth-of-type(odd) {
+  text-align: center;
+}
+
 /*****************
  * Weather cards *
  *****************/
@@ -259,6 +298,7 @@ footer div.icons a img.correct-background {
 
 footer div.copyright {
   padding-top: 1rem;
+  padding-bottom: 1rem;
   text-align: center;
 }
 

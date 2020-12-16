@@ -1,0 +1,96 @@
+@media only screen and (min-width: 74rem) { /* 1,100px */
+  div.header_top {
+    grid-template-columns: 50% 1fr;
+  }
+
+  div.header_top h1 {
+    justify-self: left;
+
+    font-size: 5rem;
+  }
+
+  img.logo {
+    justify-self: right;
+    width: 15%;
+    padding-right: 2rem;
+  }
+
+  header button#nav-button {
+    display: none;
+  }
+
+  nav ul {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  div.side-by-side {
+    grid-template-columns: 75% 25%;
+    padding-top: 1rem;
+
+    width: 92%;
+  }
+
+  fieldset.alerts {
+    width: 88%;
+  }
+
+  fieldset.alerts h2 {
+    font-size: unset;
+    text-align: center;
+  }
+
+  fieldset.alerts div.warning-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  fieldset.weather {
+    width: 114%;
+  }
+  
+  div.warning-table div.warning-item {
+    grid-template-columns: 22% 1fr;
+  }
+
+  div.warning-table div.warning-item span {
+    grid-template-columns: 22% 1fr;
+    align-self: center;
+  }
+
+  div.weather-details {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+  }
+
+  div.weather-grid div.weather-card {
+    grid-template-columns: 15% 1fr;
+  }
+
+  span.day {
+    grid-column-start: span 3;
+    margin-right: 7rem;
+    justify-self: center;
+  }
+
+  div.weather-grid div.weather-card img {
+    justify-self: center;
+  }
+
+  div.rental-card {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  div.rental-card span.rental-text a {
+    align-self: end;
+  }
+
+  footer {
+    grid-template-columns: 73% 25% 1fr;
+    width: 93.4%;
+    margin: 0 auto;
+  }
+
+  div.copyright {
+    justify-self: center;
+  }
+}

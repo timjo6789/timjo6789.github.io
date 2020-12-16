@@ -30,7 +30,9 @@
     <script defer src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script defer src="javascript/load_fonts.js"></script>
     <script defer src="javascript/dynamically_show_text.js"></script>
-    <!-- <script defer src="javascript/weatherapi.js"></script> -->
+    <script defer src="javascript/api.js"></script>
+    <script defer src="javascript/weatherapi.js"></script>
+    <script defer src="javascript/weather_alerts.js"></script>
     <script async src="javascript/menu_responsive.js"></script>
     <!--
     <script defer src="javascript/footer_time.js"></script>
@@ -56,112 +58,79 @@
       </nav>
     </header>
     <main>
-      <fieldset class="alerts">
-        <legend>Weather Alerts</legend>
-        <p class="alerts">...HEAT ADVISORY REMAINS IN EFFECT FROM 1 PM THIS AFTERNOON TO\n8 PM CDT THIS EVENING...\n* WHAT...Heat index values of 105 to 109 degrees expected.\n* WHERE...Creek, Okfuskee, Okmulgee, McIntosh, Pittsburg,\nLatimer, Pushmataha, and Choctaw Counties.\n* WHEN...From 1 PM to 8 PM CDT Thursday.\n* IMPACTS...The combination of hot temperatures and high\nhumidity will combine to create a dangerous situation in which\nheat illnesses are possible.</p>
-      </fieldset>
-      <fieldset class='weather'>
-        <legend>Weather</legend>
-        <div class="weather-grid">
-          <div class="weather-card today">
-            <img src="https://api.openweathermap.org/img/w/04d.png" alt="broken clouds">
-            <div class="weather-details">
-              <span class="day">Today</span>
-              <span>broken clouds</span>
-              <span>Temperature: 82.4°F</span>
-              <span>Humidity: 69</span>
-            </div>
+      <div class='side-by-side'>
+        <fieldset class="alerts">
+          <legend>No Weather Alerts</legend>
+        </fieldset>
+        <fieldset class='weather'>
+          <legend>Weather</legend>
+          <div class="weather-grid">
           </div>
-          <div class="weather-card forecast">
-            <img src="https://api.openweathermap.org/img/w/01d.png" alt="clear sky">
-            <div class="weather-details">
-              <span class="day">Wednesday</span>
-              <span>clear sky</span>
-              <span>Temperature: 81.84°F</span>
-              <span>Humidity: 67</span>
-            </div>
-          </div>
-          <div class="weather-card forecast">
-            <img src="https://api.openweathermap.org/img/w/10d.png" alt="light rain">
-            <div class="weather-details">
-              <span class="day">Thursday</span>
-              <span>light rain</span>
-              <span>Temperature: 78.57°F</span>
-              <span>Humidity: 79</span>
-            </div>
-          </div>
-          <div class="weather-card forecast">
-            <img src="https://api.openweathermap.org/img/w/10d.png" alt="moderate rain">
-            <div class="weather-details">
-              <span class="day">Friday</span>
-              <span>moderate rain</span>
-              <span>Temperature: 76.17°F</span>
-              <span>Humidity: 86</span>
-            </div>
-          </div>
-        </div>
-      </fieldset>
+        </fieldset>
+      </div>
       <fieldset class='rentals'>
         <legend>Rentals</legend>
-        <div class="rental-card">
-          <span class='rental-text'>
-            <span>
-              <span class='small-detail'>Going solo? Take this sweet ride!</span>
-              <span class='median-large-detail'>Going solo? Try Honda Metropolitan Scooter!</span>  
+        <div class='rental-table'>
+          <div class="rental-card">
+            <span class='rental-text'>
+              <span>
+                <span class='small-detail'>Going solo? Take this sweet ride!</span>
+                <span class='median-large-detail'>Going solo? Try Honda Metropolitan Scooter! It can take you far, far away!</span>  
+              </span>
+              <a href=""><span class='small-medium-detail'>Reserve it!</span><span class='large-detail'>Reserve ~Honda Metro Scooter Now!</span></a>
             </span>
-            <a href="">Reserve it!</a>
-          </span>
-        <img src="images/vehicles/honda_metropolitan650x380.jpg" alt="">
-        </div>
-        <div class="rental-card">
-          <span class='rental-text'>
-            <span>
-              <span class='small-detail'>Have someone with you? Take this double sweet ride!</span>
-              <span class='median-large-detail'>Have someone with you? Try Honda Duo Scooter!</span>  
+          <img src="images/vehicles/honda_metropolitan650x380.jpg" alt="">
+          </div>
+          <div class="rental-card">
+            <span class='rental-text'>
+              <span>
+                <span class='small-detail'>Have someone with you? Take this double sweet ride!</span>
+                <span  class='median-large-detail'>Have someone with you? Try Honda Duo Scooter! Take someone with you and enjoy the breeze!</span>  
+              </span>
+              <a href=""><span class='small-medium-detail'>Reserve it!</span><span class='large-detail'>Reserve ~Honda Duo Scooter Now!</span></a>
             </span>
-            <a href="">Reserve it!</a>
-          </span>
-          <img src="images/vehicles/honda-dio_600x400.jpg" alt="">
-        </div>
-        <div class="rental-card">
-          <span class='rental-text'>
-            <span>
-              <span class='small-detail'>Feeling fancy? Going solo? Take this sweeter ride!</span>
-              <span class='median-large-detail'>Feeling fancy? Going solo? Try Honda PCX150 Scooter!</span>  
+            <img src="images/vehicles/honda-dio_600x400.jpg" alt="">
+          </div>
+          <div class="rental-card">
+            <span class='rental-text'>
+              <span>
+                <span class='small-detail'>Feeling fancy? Going duo? Take this sweeter ride!</span>
+                <span class='median-large-detail'>Feeling fancy? Going duo? Try Honda PCX150 Scooter! Fastest scooter ever owned!</span>  
+              </span>
+              <a href=""><span class='small-medium-detail'>Reserve it!</span><span class='large-detail'>Reserve ~Honda PCX150 Scooter now!</span></a>
             </span>
-            <a href="">Reserve it!</a>
-          </span>
-          <img src="images/vehicles/honda_pcx150_scooter_650x380.jpg" alt="">
-        </div>
-        <div class="rental-card">
-          <span class='rental-text'>
-            <span>
-              <span class='small-detail'>Feeling adventerous? Take this ATV style ride!</span>
-              <span class='median-large-detail'>Feeling adventerous? Try Honda Pioneer ATV!</span>  
+            <img src="images/vehicles/honda_pcx150_scooter_650x380.jpg" alt="">
+          </div>
+          <div class="rental-card">
+            <span class='rental-text'>
+              <span>
+                <span class='small-detail'>Feeling adventerous? Take this ATV style ride!</span>
+                <span class='median-large-detail'>Feeling adventerous? Try Honda Pioneer ATV! It'll take you to places like never before!</span>  
+              </span>
+              <a href=""><span class='small-medium-detail'>Reserve it!</span><span class='large-detail'>Reserve Honda Pioneer ATV Now!</span></a>
             </span>
-            <a href="">Reserve it!</a>
-          </span>
-          <img src="images/vehicles/2021-pioneer-1000-red-650x380.jpg" alt="">
-        </div>
-        <div class="rental-card">
-          <span class='rental-text'>
-            <span>
-              <span class='small-detail'>Feeling adventerous? Have a squad? Take this jeep for a drive!</span>
-              <span class='median-large-detail'>Feeling adventerous? Have a squad? Try Jeep with 4 doors and air conditioner for a drive!</span>  
+            <img src="images/vehicles/2021-pioneer-1000-red-650x380.jpg" alt="">
+          </div>
+          <div class="rental-card">
+            <span class='rental-text'>
+              <span>
+                <span class='small-detail'>Feeling adventerous? Have a squad? Take this jeep for a drive!</span>
+                <span class='median-large-detail'>Feeling adventerous? Have a squad? Try Jeep with 4 doors and air conditioner for a drive! You'll get cooled off!</span>  
+              </span>
+              <a href=""><span class='small-medium-detail'>Reserve it!</span><span class='large-detail'>Reserve Jeep with 4 Doors and Air Conditioner Now!</span></a>
             </span>
-            <a href="">Reserve it!</a>
-          </span>
-          <img src="images/vehicles/jeep_4_doors.jpg" alt="">
-        </div>
-        <div class="rental-card">
-          <span class='rental-text'>
-            <span>
-              <span class='small-detail'>Feeling adventerous? Just a duo? Take this duo jeep for a drive!</span>
-              <span class='median-large-detail'>Feeling adventerous? Just a duo? Try Jeep with 2 doors for a drive!</span>  
+            <img src="images/vehicles/jeep_4_doors.jpg" alt="">
+          </div>
+          <div class="rental-card">
+            <span class='rental-text'>
+              <span>
+                <span class='small-detail'>Feeling adventerous? Just a duo? Take this duo jeep for a drive!</span>
+                <span class='median-large-detail'>Feeling adventerous? Just a duo? Try Jeep with 2 doors for a drive! You'll be protected from any rain!</span>  
+              </span>
+              <a href=""><span class='small-medium-detail'>Reserve it!</span><span class='large-detail'>Reserve Jeep with 2 Doors Now!</span></a>
             </span>
-            <a href="">Reserve it!</a>
-          </span>
-          <img src="images/vehicles/jeep_2_doors.jpg" alt="">
+            <img src="images/vehicles/jeep_2_doors.jpg" alt="">
+          </div>
         </div>
       </fieldset>
     </main>

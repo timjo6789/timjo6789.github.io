@@ -1,5 +1,3 @@
-const APPID = "25ade7342d9ba6641eee96d1d854f3b1";
-
 setText = (querySelector, text) => document.querySelector(querySelector).textContent = text;
 
 day_of_week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -12,11 +10,12 @@ function weather(json_data){
       <div class="weather-details">
         <span class="day">Today</span>
         <span>${json_data['weather'][0]['description']}</span>
-        <span>Temperature: ${json_data['main']['temp']}°F</span>
+        <span><span class="small-detail">Temperature: </span>${json_data['main']['temp']}°F</span>
         <span>Humidity: ${json_data['main']['humidity']}</span>
       </div>
     </div>
     `;
+    triggerChange();
 }
 
 function forecast(json_data) {
@@ -24,20 +23,21 @@ function forecast(json_data) {
   let forcasts = json_data['list'].filter(each => each['dt_txt'].split(' ')[1] == '18:00:00');
   let current_day = new Date();
 
-  for (let i = 0; i < 3; i++) {
-    current_day.setTime(forcasts[i]['dt'] * 1000);
+  for (let forcast of forcasts.slice(0, 3)) {
+    current_day.setTime(forcast['dt'] * 1000);
     weather_section.innerHTML += 
       `<div class="weather-card forecast">
-        ${api_image(forcasts[i])}
+        ${api_image(forcast)}
         <div class="weather-details">
           <span class="day">${day_of_week[current_day.getDay()]}</span>
-          <span>${forcasts[i]['weather'][0]['description']}</span>
-          <span>Temperature: ${forcasts[i]['main']['temp']}°F</span>
-          <span>Humidity: ${forcasts[i]['main']['humidity']}</span>
+          <span>${forcast['weather'][0]['description']}</span>
+          <span><span class='small-detail'>Temperature: </span>${forcast['main']['temp']}°F</span>
+          <span>Humidity: ${forcast['main']['humidity']}</span>
         </div>
       </div>
       `;
   }
+  triggerChange();
 }
 
 
