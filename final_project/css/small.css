@@ -304,7 +304,7 @@ iframe:nth-last-of-type(1) {
   margin-bottom: 1rem;
 }
 
-fieldset.contact-info form input[type="submit"] {
+fieldset.contact-info form input.submit {
   margin-top: 1rem;
 }
 
@@ -376,12 +376,12 @@ form input {
   height: 44px;
 }
 
-form input:valid:not(input[type="submit"]) {
+form input:valid:not(input.submit) {
   border: 3px solid green;
   border-radius: 1rem;
 }
 
-form input:optional:not(input[type="submit"]) {
+form input:optional:not(input.submit) {
   border: 3px solid gray;
   border-radius: 1rem;
 }
@@ -400,7 +400,7 @@ form p {
   margin-bottom: -1rem;
 }
 
-form input[type="submit"] {
+form input.submit {
   align-self: center;
 
   margin-top: 1rem;
