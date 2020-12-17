@@ -40,8 +40,8 @@ json_data = {'alerts': [
 api(json_data);
 */
 
-// comment to test weather alerts
+
 let LAT = '20.422983';
 let LON = '-86.922340';
-// prevent calls for testing (max calls is 1,000)
-// bind_fetch(api, `https://api.openweathermap.org/data/2.5/onecall?lat=${LAT}&lon=${LON}&exclude=hourly,daily,minutely,current&appid=${APPID}`);
+// comment to test weather alerts
+bind_fetch(api, `https://api.openweathermap.org/data/2.5/onecall?lat=${LAT}&lon=${LON}&exclude=hourly,daily,minutely,current&appid=${APPID}`);
