@@ -133,6 +133,7 @@
   }
 
   footer div.copyright {
-    justify-self: center;
-  }
+    justify-self: left;
+    padding-left: 6rem;
+}
 }

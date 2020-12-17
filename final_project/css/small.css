@@ -419,7 +419,6 @@ footer {
   margin-top: 1rem;
   padding-top: 1rem;
 
-  color: blue;
   background-color: var(--yellow);
 }
 
@@ -461,6 +460,11 @@ footer div.copyright span.other{
 
 footer div.copyright span.dash {
   display: none;
+}
+
+footer div.time {
+  text-align: center;
+  padding-bottom: 1rem;
 }
 
 /*************
