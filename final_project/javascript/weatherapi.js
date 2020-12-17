@@ -1,4 +1,4 @@
-day_of_week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+day_of_week_list = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 function weather(json_data){
   let weather_section = select('.weather-grid');
@@ -27,7 +27,7 @@ function forecast(json_data) {
       `<div class="weather-card forecast">
         ${api_image(forcast)}
         <div class="weather-details">
-          <span class="day">${day_of_week[current_day.getDay()]}</span>
+          <span class="day">${day_of_week_list[current_day.getDay()]}</span>
           <span>${forcast['weather'][0]['description']}</span>
           <span><span class='small-detail'>Temperature: </span>${forcast['main']['temp']}°F</span>
           <span>Humidity: ${forcast['main']['humidity']}</span>
