@@ -376,14 +376,19 @@ form input {
   height: 44px;
 }
 
-form input:valid:not(input.submit) {
+form input:valid {
   border: 3px solid green;
   border-radius: 1rem;
 }
 
-form input:optional:not(input.submit) {
+form input:optional {
   border: 3px solid gray;
   border-radius: 1rem;
+}
+
+form input.submit {
+  border: unset;
+  border-radius: unset;
 }
 
 form input:invalid {
