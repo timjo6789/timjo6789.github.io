@@ -96,6 +96,15 @@
   fieldset.rentals div.rental-card img {
     order: unset;
 
+    margin-left: 0;
+    
+    width: 95%;
+  }
+  
+  fieldset.rentals div.rental-card picture {
+    align-self: center;
+    justify-self: center;
+
     width: 95%;
   }
 
